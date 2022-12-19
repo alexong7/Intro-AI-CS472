@@ -9,30 +9,29 @@ def createPuzzle():
     to a new array which is our start state for the puzzle.
     """
 
-    numbers = [1, 2, 3, 4, 5, 6, 7, 8, "."]
+    numbers = [1, 2, 3, 4, 5, 6, 7, 8, 0]
     numbersArrangement = []
     for i in range(9):
         tempNumber = random.choice(numbers)
         numbers.remove(tempNumber)
         numbersArrangement.append(tempNumber)
     return numbersArrangement
-    #drawPuzzleStart(numbersArrangement)
 
 
-def drawPuzzleStart(puzzleArray):
+def drawPuzzleStart(puzzle):
 
     """ we draw the puzzle in a 3x3 grid """
 
     for i in range(0, 9):
         print(" ", end="")
-        print(puzzleArray[i], end="")
+        print(puzzle[i], end="")
         if (i + 1) % 3 != 0:
             print(" |", end="")
         else:
             print("\n", end="")
 
 
-def checkSolvability(checkArray):
+def checkSolvability(checkPuzzle):
 
     """
     Here we check for the amount of number pairs, where the higher number appears before the lower number.
@@ -43,10 +42,9 @@ def checkSolvability(checkArray):
     evenOrOdd = 0
     for i in range(0, 9):
         for j in range(i+1, 9):
-            if checkArray[i] != "." and checkArray[j] != "." and checkArray[i] > checkArray[j]:
+            if checkPuzzle[i] != 0 and checkPuzzle[j] != 0 and checkPuzzle[i] > checkPuzzle[j]:
                 evenOrOdd+=1
 
-    #print(evenOrOdd)
     return evenOrOdd % 2 == 0
 
 
@@ -63,4 +61,3 @@ def create100Variations():
             allVariations.append(tempArray)
 
     return allVariations
-    #print(allVariations)
