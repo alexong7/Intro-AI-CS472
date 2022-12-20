@@ -1,14 +1,19 @@
 import copy
 import math
+import time
+
 from manhatten import *
 from puzzleGenerator import *
 import os
+from puzzleGenerator import *
+from hamming import *
 
 
-goalState = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+class puzzleStateManhattan:
 
-
-class puzzleState:
+    """Puzzle class manhattan. each puzzle containing the manhattan distance,
+    the generation (= steps into expansions), the f value (f = h + g (h = manhattan distance, g = generation)),
+    and a closed boolean for already expanded puzzle states"""
 
     def __init__(self, puzzle, manDis, generation, f):
         self.puzzle = puzzle
@@ -18,27 +23,67 @@ class puzzleState:
         self.closed = False
 
 
-def manhattan():
-    puzzle = [7, 5, 0, 8, 6, 4, 2, 3, 1]
-    startState = puzzleState(puzzle, calcManDis(puzzle), 0, calcManDis(puzzle))
+class puzzleStateHamming:
+
+    """Puzzle class hamming. each puzzle containing the hamming distance,
+    the generation (= steps into expansions), the f value (f = h + g (h = manhattan distance, g = generation)),
+    and a closed boolean for already expanded puzzle states"""
+
+    def __init__(self, puzzle, hamDis, generation, f):
+        self.puzzle = puzzle
+        self.hamDis = hamDis
+        self.generation = generation
+        self.f = f
+        self.closed = False
+
+
+class finishStats:
+
+    def __init__(self, expansions, steps, time):
+        self.expansions = expansions
+        self.steps = steps
+        self.time = time
+
+
+def printFinish(expansions, indexX):
+    drawPuzzleStart(expansions[0].puzzle)
+    print("Solved")
+    drawPuzzleStart(expansions[indexX].puzzle)
+    print("States expanded: " + str(len(expansions)))
+    print("Steps: " + str(expansions[indexX].generation))
+
+
+def hamming(puzzle):
+    start = time.time()
+    startState = puzzleStateHamming(puzzle, calcHemDis(puzzle), 0, calcHemDis(puzzle))
     expansions = [startState]
 
     while True:
-        expand(expansions)
-        if checkSolvedMan(expansions):
+        if expand(expansions, "hamming"):
+            #printFinish(expansions, len(expansions) - 1)
             break
 
-
-def checkSolvedMan(expansions):
-    for x in expansions:
-        if x.manDis == 0:
-            print("Solved")
-            print("States expanded: " + str(len(expansions)))
-            return True
-    return False
+    end = time.time()
+    elapsedTime = end - start
+    return finishStats(len(expansions), expansions[len(expansions) - 1].generation, elapsedTime)
 
 
-def expand(expansions):
+def manhattan(puzzle):
+    start = time.time()
+    startState = puzzleStateManhattan(puzzle, calcManDis(puzzle), 0, calcManDis(puzzle))
+    expansions = [startState]
+
+    while True:
+        if expand(expansions, "manhattan"):
+            #printFinish(expansions, len(expansions) - 1)
+            break
+
+    end = time.time()
+    elapsedTime = end - start
+    return finishStats(len(expansions), expansions[len(expansions) - 1].generation, elapsedTime)
+
+
+def expand(expansions, algorithm):
     fScore = 9000
     stateIndex = 0
     for x in expansions:
@@ -56,41 +101,53 @@ def expand(expansions):
         puzzleDown = copy.deepcopy(puzzle)
         puzzleDown[blankIndex] = puzzleDown[blankIndex + 3]
         puzzleDown[blankIndex + 3] = 0
-        addNewState(expansions, stateIndex, puzzleDown)
+        if addNewState(expansions, stateIndex, puzzleDown, algorithm):
+            return True
 
     """Expand up"""
     if blankRow == 2 or blankRow == 1:
         puzzleDown = copy.deepcopy(puzzle)
         puzzleDown[blankIndex] = puzzleDown[blankIndex - 3]
         puzzleDown[blankIndex - 3] = 0
-        addNewState(expansions, stateIndex, puzzleDown)
+        if addNewState(expansions, stateIndex, puzzleDown, algorithm):
+            return True
 
     """Expand left"""
     if blankColumn == 2 or blankColumn == 1:
         puzzleDown = copy.deepcopy(puzzle)
         puzzleDown[blankIndex] = puzzleDown[blankIndex - 1]
         puzzleDown[blankIndex - 1] = 0
-        addNewState(expansions, stateIndex, puzzleDown)
+        if addNewState(expansions, stateIndex, puzzleDown, algorithm):
+            return True
 
     """Expand right"""
     if blankColumn == 0 or blankColumn == 1:
         puzzleDown = copy.deepcopy(puzzle)
         puzzleDown[blankIndex] = puzzleDown[blankIndex + 1]
         puzzleDown[blankIndex + 1] = 0
-        addNewState(expansions, stateIndex, puzzleDown)
+        if addNewState(expansions, stateIndex, puzzleDown, algorithm):
+            return True
 
-    for x in expansions:
-        if x.generation == expansions[stateIndex].generation:
-            x.closed = True
     expansions[stateIndex].closed = True
 
 
-def addNewState(expansions, stateIndex, puzzle):
+def addNewState(expansions, stateIndex, puzzle, algorithm):
     generation = expansions[stateIndex].generation + 1
-    manDis = calcManDis(puzzle)
-    newState = puzzleState(puzzle, manDis, generation, manDis + generation)
-    if not checkDublicate(expansions, puzzle):
-        expansions.append(newState)
+
+    if algorithm == "manhattan":
+        manDis = calcManDis(puzzle)
+        newState = puzzleStateManhattan(puzzle, manDis, generation, manDis + generation)
+        if not checkDublicate(expansions, puzzle):
+            expansions.append(newState)
+            if manDis == 0:
+                return True
+    else:
+        hamDis = calcHemDis(puzzle)
+        newState = puzzleStateHamming(puzzle, hamDis, generation, hamDis + generation)
+        if not checkDublicate(expansions, puzzle):
+            expansions.append(newState)
+            if hamDis == 0:
+                return True
 
 
 def checkDublicate(expansions, puzzle):
