@@ -144,6 +144,9 @@ def expand(expansions, open, algorithm):
 
     open.remove(open[stateIndex])
 
+    for x in open:
+        if x.generation == generation - 1:
+            open.remove(x)
 
 def addNewState(expansions, open, generation, puzzle, algorithm):
 

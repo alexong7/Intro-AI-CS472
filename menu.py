@@ -22,7 +22,7 @@ def startMenu():
 
         if option == 1:
             print("\n" + "Manhatten (x1)")
-            printStats(manhattan(create100Variations()[10]))
+            printStats(manhattan(create100Variations()[0]))
         elif option == 2:
             print("\n" + "Hamming (x1)")
             printStats(hamming(create100Variations()[0]))
