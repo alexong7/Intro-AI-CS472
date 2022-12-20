@@ -59,7 +59,10 @@ def startMenu():
     startMenu()
 
 
-    """printing single runs and 100x runs"""
+    """printing single runs and 100x runs.
+    
+    Input: stats (time, steps, expanded nodes).
+    Output: print to console"""
 
 def printStats(stats):
     print("Expansions: " + str(stats.expansions))

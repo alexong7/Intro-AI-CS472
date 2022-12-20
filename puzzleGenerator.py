@@ -8,6 +8,8 @@ def createPuzzle():
     """
     From an predefined array with all possible values we pick a random value and add it
     to a new array which is our start state for the puzzle.
+
+    Output: a puzzle (array from 0 to 8).
     """
 
     numbers = [1, 2, 3, 4, 5, 6, 7, 8, 0]
@@ -21,7 +23,10 @@ def createPuzzle():
 
 def drawPuzzleStart(puzzle):
 
-    """ we draw the puzzle in a 3x3 grid """
+    """we draw the puzzle in a 3x3 grid.
+
+    Input: puzzle (array from 0 to 8).
+    Output in console."""
 
     for i in range(0, 9):
         print(" ", end="")
@@ -37,7 +42,9 @@ def checkSolvability(checkPuzzle):
     """
     Here we check for the amount of number pairs, where the higher number appears before the lower number.
     If those pairs appear an even amount of times the puzzle is not solvable.
-    We return true or false.
+
+    Input: puzzle (array from 0 to 8).
+    Output: true or false.
     """
 
     evenOrOdd = 0
@@ -55,6 +62,8 @@ def create100Variations():
         """
         Here we generate all the 100 variations with the createPuzzle() methode. We check each
         variation for solvability and if solvable we add it to our list of valid variations.
+        
+        Output: list of puzzles.
         """
         tempArray = createPuzzle()
 

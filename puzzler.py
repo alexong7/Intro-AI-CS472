@@ -49,7 +49,10 @@ class finishStats:
 
 def printFinish(expansions, indexX):
 
-    """debugging function for printing stats of execution"""
+    """debugging function for printing stats of execution.
+
+    Input: list of all nodes, index of solution node.
+    Output in console."""
 
     drawPuzzleStart(expansions[0].puzzle)
     print("Solved")
@@ -60,7 +63,10 @@ def printFinish(expansions, indexX):
 
 def hamming(puzzle):
 
-    """starting a hamming run. while loop until solution is found and stats returned to the menu"""
+    """starting a hamming run. while loop until solution is found and stats returned to the menu.
+
+    Input: starting node
+    Output: stats about execution (time, steps, expanded nodes)"""
 
     start = time.time()
     startState = puzzleStateHamming(puzzle, calcHemDis(puzzle), 0, calcHemDis(puzzle))
@@ -78,7 +84,10 @@ def hamming(puzzle):
 
 def manhattan(puzzle):
 
-    """starting a manhattan run. while loop until solution is found and stats returned to the menu"""
+    """starting a manhattan run. while loop until solution is found and stats returned to the menu
+
+    Input: starting node
+    Output: stats about execution (time, steps, expanded nodes)"""
 
     start = time.time()
     startState = puzzleStateManhattan(puzzle, calcManDis(puzzle), 0, calcManDis(puzzle))
@@ -97,7 +106,10 @@ def manhattan(puzzle):
 def expand(expansions, algorithm):
 
     """expanding a state. we first search for the state with the lowest f value (f = h + g),
-    where h is the hamming or manhattan distance, and g is the generation."""
+    where h is the hamming or manhattan distance, and g is the generation.
+
+    Input: list of all nodes, algorithm
+    Output: True if solution"""
 
     fScore = 9000
     stateIndex = 0
@@ -154,7 +166,10 @@ def expand(expansions, algorithm):
 def addNewState(expansions, stateIndex, puzzle, algorithm):
 
     """generating the new expanded state. first incrementing the generation.
-    then we decide the distance and the f value and add the state to the list of expansions."""
+    then we decide the distance and the f value and add the state to the list of expansions.
+
+    Input: list of all nodes, index of parent node, new node, algorithm
+    Output: true if solution"""
 
     generation = expansions[stateIndex].generation + 1
 
@@ -176,7 +191,10 @@ def addNewState(expansions, stateIndex, puzzle, algorithm):
 
 def checkDuplicate(expansions, puzzle):
 
-    """Check if a state already exists in the list of states. if so we trash it to avoid duplicates."""
+    """Check if a state already exists in the list of states. if so we trash it to avoid duplicates.
+
+    Input: list of all expanded nodes & new node.
+    Output: true or false."""
 
     for x in expansions:
         if x.puzzle == puzzle:

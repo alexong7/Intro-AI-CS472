@@ -6,7 +6,10 @@ def calcManDis(puzzle):
 
     """Calculate the manhattan distance. skip 0 (as 0 represents the blank tile).
     from an puzzle array we step through the index, calculating each offset and adding
-    it to the difference"""
+    it to the difference.
+    
+    Input: puzzle (array from 0 to 8).
+    Output: manhattan distance (int)"""
 
     for i in range(9):
         if puzzle[i] == 0:
