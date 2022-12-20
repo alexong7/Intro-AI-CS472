@@ -1,6 +1,5 @@
 from puzzler import *
 from puzzleGenerator import *
-import statistics
 
 
 def startMenu():

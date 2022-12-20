@@ -140,7 +140,7 @@ def expand(expansions, open, algorithm):
         if addNewState(expansions, open, generation, puzzleDown, algorithm):
             return True
 
-    """after expansion we set the parent tile to closed"""
+    """after expansion we set the parent generation to closed"""
 
     open.remove(open[stateIndex])
 
