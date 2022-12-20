@@ -10,6 +10,9 @@ def startMenu():
     print("(4)  Solve 100 Puzzles using Hamming")
     print("(5)  Exit" + "\n")
 
+    """main menu with 5 options to solve 1 or 100 puzzles using either manhattan or hamming.
+    manhattan() and hamming() return statistics about the execution which are printed below"""
+
     option = 0
     while option < 1 or option > 5:
         try:
@@ -55,6 +58,8 @@ def startMenu():
     proceed = input("Press enter key to continue." + "\n")
     startMenu()
 
+
+    """printing single runs and 100x runs"""
 
 def printStats(stats):
     print("Expansions: " + str(stats.expansions))

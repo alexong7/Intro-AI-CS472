@@ -39,6 +39,8 @@ class puzzleStateHamming:
 
 class finishStats:
 
+    """Finished stats class for returning the stats about execution to the menu for printing"""
+
     def __init__(self, expansions, steps, time):
         self.expansions = expansions
         self.steps = steps
@@ -46,6 +48,9 @@ class finishStats:
 
 
 def printFinish(expansions, indexX):
+
+    """debugging function for printing stats of execution"""
+
     drawPuzzleStart(expansions[0].puzzle)
     print("Solved")
     drawPuzzleStart(expansions[indexX].puzzle)
@@ -54,6 +59,9 @@ def printFinish(expansions, indexX):
 
 
 def hamming(puzzle):
+
+    """starting a hamming run. while loop until solution is found and stats returned to the menu"""
+
     start = time.time()
     startState = puzzleStateHamming(puzzle, calcHemDis(puzzle), 0, calcHemDis(puzzle))
     expansions = [startState]
@@ -69,6 +77,9 @@ def hamming(puzzle):
 
 
 def manhattan(puzzle):
+
+    """starting a manhattan run. while loop until solution is found and stats returned to the menu"""
+
     start = time.time()
     startState = puzzleStateManhattan(puzzle, calcManDis(puzzle), 0, calcManDis(puzzle))
     expansions = [startState]
@@ -84,12 +95,19 @@ def manhattan(puzzle):
 
 
 def expand(expansions, algorithm):
+
+    """expanding a state. we first search for the state with the lowest f value (f = h + g),
+    where h is the hamming or manhattan distance, and g is the generation."""
+
     fScore = 9000
     stateIndex = 0
     for x in expansions:
         if fScore > x.f and not x.closed:
             fScore = x.f
             stateIndex = expansions.index(x)
+
+    """following we copy the puzzle to alternate it and calculate the index, row and column
+    of the blank tile to expand from there."""
 
     puzzle = expansions[stateIndex].puzzle
     blankIndex = puzzle.index(0)
@@ -128,29 +146,38 @@ def expand(expansions, algorithm):
         if addNewState(expansions, stateIndex, puzzleDown, algorithm):
             return True
 
+    """after expansion we set the parent tile to closed"""
+
     expansions[stateIndex].closed = True
 
 
 def addNewState(expansions, stateIndex, puzzle, algorithm):
+
+    """generating the new expanded state. first incrementing the generation.
+    then we decide the distance and the f value and add the state to the list of expansions."""
+
     generation = expansions[stateIndex].generation + 1
 
     if algorithm == "manhattan":
         manDis = calcManDis(puzzle)
         newState = puzzleStateManhattan(puzzle, manDis, generation, manDis + generation)
-        if not checkDublicate(expansions, puzzle):
+        if not checkDuplicate(expansions, puzzle):
             expansions.append(newState)
             if manDis == 0:
                 return True
     else:
         hamDis = calcHemDis(puzzle)
         newState = puzzleStateHamming(puzzle, hamDis, generation, hamDis + generation)
-        if not checkDublicate(expansions, puzzle):
+        if not checkDuplicate(expansions, puzzle):
             expansions.append(newState)
             if hamDis == 0:
                 return True
 
 
-def checkDublicate(expansions, puzzle):
+def checkDuplicate(expansions, puzzle):
+
+    """Check if a state already exists in the list of states. if so we trash it to avoid duplicates."""
+
     for x in expansions:
         if x.puzzle == puzzle:
             return True
