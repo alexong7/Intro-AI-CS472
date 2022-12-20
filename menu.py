@@ -1,9 +1,9 @@
 from puzzler import *
 from puzzleGenerator import *
+import statistics
 
 
 def startMenu():
-    print("Menu" + "\n")
     print("(1)  Solve 1 Puzzle using Manhattan")
     print("(2)  Solve 1 Puzzle using Hamming")
     print("(3)  Solve 100 Puzzles using Manhattan")
@@ -22,40 +22,30 @@ def startMenu():
 
         if option == 1:
             print("\n" + "Manhatten (x1)")
-            printStats(manhattan(create100Variations()[0]))
+            printStats(manhattan(create100Variations()[10]))
         elif option == 2:
             print("\n" + "Hamming (x1)")
             printStats(hamming(create100Variations()[0]))
         elif option == 3:
             puzzles = create100Variations()
-            totalExpansions = 0
-            totalTime = 0
-            totalSteps = 0
+            stats = []
             for x in puzzles:
-                stats = manhattan(x)
-                totalExpansions += stats.expansions
-                totalTime += stats.time
-                totalSteps += stats.steps
+                stats.append(manhattan(x))
                 print(puzzles.index(x))
             print("\n" + "Manhatten (x100)")
-            printTotalStats([totalExpansions, totalTime, totalSteps])
+            printTotalStats(stats)
         elif option == 4:
             puzzles = create100Variations()
-            totalExpansions = 0
-            totalTime = 0
-            totalSteps = 0
+            stats = []
             for x in puzzles:
-                stats = hamming(x)
-                totalExpansions += stats.expansions
-                totalTime += stats.time
-                totalSteps += stats.steps
+                stats.append(hamming(x))
                 print(puzzles.index(x))
             print("\n" + "Hamming (x100)")
-            printTotalStats([totalExpansions, totalTime, totalSteps])
+            printTotalStats(stats)
         elif option == 5:
             quit()
 
-    proceed = input("Press enter key to continue." + "\n")
+    proceed = input("Press enter to continue." + "\n")
     startMenu()
 
 
@@ -72,7 +62,48 @@ def printStats(stats):
 
 
 def printTotalStats(stats):
-    print("Expansions [total/avg.]: " + str(stats[0]) + " / " + str(stats[0] / 100))
-    print("Steps [total/avg.]: " + str(stats[2]) + " / " + str(stats[2] / 100))
-    print("Time [total/avg.]: " + str(round(stats[1], 3)) + " / " + str(round(stats[1] / 100, 3)))
+    expansions = 0
+    steps = 0
+    time = 0
+    expansionsList = []
+    stepsList = []
+    timeList = []
+
+    """sum up the values"""
+    for x in stats:
+        expansions += x.expansions
+        steps += x.steps
+        time += x.time
+        expansionsList.append(x.expansions)
+        stepsList.append(x.steps)
+        timeList.append(x.time)
+
+    expansionsMean = expansions / 100
+    stepsMean = steps / 100
+    timeMean = time / 100
+
+    """Calculate standard deviation"""
+
+    expansionsSD = 0
+    stepsSD = 0
+    timeSD = 0
+    for i in range(100):
+        expansionsList[i] = math.pow((expansionsList[i] - expansionsMean), 2)
+        expansionsSD += expansionsList[i]
+        stepsList[i] = math.pow((stepsList[i] - stepsMean), 2)
+        stepsSD += stepsList[i]
+        timeList[i] = math.pow((timeList[i] - timeMean), 2)
+        timeSD += timeList[i]
+
+    expansionsSD = math.sqrt(expansionsSD / 99)
+    stepsSD = math.sqrt(stepsSD / 99)
+    timeSD = math.sqrt(timeSD / 99)
+
+    print("Expansions [total/avg.]: " + str(expansions) + " / " + str(expansionsMean))
+    print("Steps [total/avg.]: " + str(steps) + " / " + str(stepsMean))
+    print("Time [total/avg.]: " + str(round(time, 3)) + " / " + str(round(timeMean, 3)))
+    print()
+    print("Expansions standard deviation: " + str(round(expansionsSD, 3)))
+    print("Steps standard deviation: " + str(round(stepsSD, 3)))
+    print("Time standard deviation: " + str(round(timeSD, 3)))
     print()
