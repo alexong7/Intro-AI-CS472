@@ -30,7 +30,9 @@ def startMenu():
             stats = []
             for x in puzzles:
                 stats.append(manhattan(x))
-                print(puzzles.index(x))
+                print(puzzles.index(x), end=" ")
+                if puzzles.index(x) == 49:
+                    print()
             print("\n" + "Manhatten (x100)")
             printTotalStats(stats)
         elif option == 4:
@@ -38,7 +40,9 @@ def startMenu():
             stats = []
             for x in puzzles:
                 stats.append(hamming(x))
-                print(puzzles.index(x))
+                print(puzzles.index(x), end=" ")
+                if puzzles.index(x) == 49:
+                    print()
             print("\n" + "Hamming (x100)")
             printTotalStats(stats)
         elif option == 5:
