@@ -1,1 +1,1 @@
-print("Cat is testin")
+print("Cat is testing")

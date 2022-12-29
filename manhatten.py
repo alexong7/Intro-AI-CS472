@@ -2,14 +2,17 @@ import math
 
 
 def calcManDis(puzzle):
-    difference = 0
+    distance = 0
 
-    """Calculate the manhattan distance. skip 0 (as 0 represents the blank tile).
-    from an puzzle array we step through the index, calculating each offset and adding
-    it to the difference.
+    """
+    Calculation of the Manhattan distance. 
+    Skip 0 (as 0 represents the blank tile). From an puzzle array step through the index, 
+    calculating each offset (the sum of the vertical and horizontal steps needed to reach 
+    its goal position) and adding it to the distance.
     
-    Input: puzzle (array from 0 to 8).
-    Output: manhattan distance (int)"""
+    Input: puzzle (array from 0 to 8)
+    Output: Manhattan distance (int)
+    """
 
     for i in range(9):
         if puzzle[i] == 0:
@@ -20,9 +23,9 @@ def calcManDis(puzzle):
         actualRow = math.floor(puzzle[i] / 3)
         actualColumn = puzzle[i] % 3
 
-        difference += abs(actualRow - row) + abs(actualColumn - column)
+        distance += abs(actualRow - row) + abs(actualColumn - column)
 
-    return difference
+    return distance
 
 
 

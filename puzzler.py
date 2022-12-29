@@ -7,9 +7,13 @@ from hamming import *
 
 class puzzleStateManhattan:
 
-    """Puzzle class manhattan. each puzzle containing the manhattan distance,
-    the generation (= steps into expansions), the f value (f = h + g (h = manhattan distance, g = generation)),
-    and a closed boolean for already expanded puzzle states"""
+    """
+    Puzzle class manhattan. Each puzzle containing
+    - h = manhattan distance (calculated in manhattan.py)
+    - g = generation (i.e. steps into expansions)
+    - f value (f = h + g)
+    - and a closed boolean for already expanded puzzle states.
+    """
 
     def __init__(self, puzzle, manDis, generation, f):
         self.puzzle = puzzle
@@ -21,9 +25,13 @@ class puzzleStateManhattan:
 
 class puzzleStateHamming:
 
-    """Puzzle class hamming. each puzzle containing the hamming distance,
-    the generation (= steps into expansions), the f value (f = h + g (h = manhattan distance, g = generation)),
-    and a closed boolean for already expanded puzzle states"""
+    """
+    Puzzle class hamming. Each puzzle containing
+    - h = hamming distance (calculated in hamming.py)
+    - g = generation (i.e. steps into expansions)
+    - f value (f = h + g)
+    - and a closed boolean for already expanded puzzle states.
+    """
 
     def __init__(self, puzzle, hamDis, generation, f):
         self.puzzle = puzzle
@@ -34,7 +42,9 @@ class puzzleStateHamming:
 
 class finishStats:
 
-    """Finished stats class for returning the stats about execution to the menu for printing"""
+    """
+    FinishStats class for returning the stats about puzzle execution to menu.py for printing.
+    """
 
     def __init__(self, expansions, steps, time):
         self.expansions = expansions
@@ -44,13 +54,15 @@ class finishStats:
 
 def hamming(puzzle):
 
-    """starting a hamming run. while loop until solution is found and stats returned to the menu.
+    """
+    Starting a hamming run. while loop, until solution is found and stats are returned to menu.py.
 
     Input: starting node
-    Output: stats about execution (time, steps, expanded nodes)"""
+    Output: stats about execution (time, steps, expanded nodes)
+    """
 
     start = time.time()
-    startState = puzzleStateHamming(puzzle, calcHemDis(puzzle), 0, calcHemDis(puzzle))
+    startState = puzzleStateHamming(puzzle, calcHamDis(puzzle), 0, calcHamDis(puzzle))
     expansions = [startState]
     open = [startState]
 
@@ -65,10 +77,12 @@ def hamming(puzzle):
 
 def manhattan(puzzle):
 
-    """starting a manhattan run. while loop until solution is found and stats returned to the menu
+    """
+    Starting a manhattan run. while loop, until solution is found and stats returned to menu.py.
 
     Input: starting node
-    Output: stats about execution (time, steps, expanded nodes)"""
+    Output: stats about execution (time, steps, expanded nodes)
+    """
 
     start = time.time()
     startState = puzzleStateManhattan(puzzle, calcManDis(puzzle), 0, calcManDis(puzzle))
@@ -86,11 +100,13 @@ def manhattan(puzzle):
 
 def expand(expansions, open, algorithm):
 
-    """expanding a state. we first search for the state with the lowest f value (f = h + g),
+    """
+    Expansion of a state. First search for the state with the lowest f value (f = h + g),
     where h is the hamming or manhattan distance, and g is the generation.
 
     Input: list of all nodes, algorithm
-    Output: True if solution"""
+    Output: true if solution
+    """
 
     fScore = 9000
     stateIndex = 0
@@ -99,8 +115,10 @@ def expand(expansions, open, algorithm):
             fScore = x.f
             stateIndex = open.index(x)
 
-    """following we copy the puzzle to alternate it and calculate the index, row and column
-    of the blank tile to expand from there."""
+    """
+    Next, copy the puzzle to alternate it and calculate the index, row and column
+    of the blank tile to expand from there.
+    """
 
     puzzle = open[stateIndex].puzzle
     blankIndex = puzzle.index(0)
@@ -108,7 +126,9 @@ def expand(expansions, open, algorithm):
     blankColumn = blankIndex % 3
     generation = open[stateIndex].generation
 
-    """Expand down"""
+    """
+    Expand down
+    """
     if blankRow == 0 or blankRow == 1:
         puzzleDown = copy.deepcopy(puzzle)
         puzzleDown[blankIndex] = puzzleDown[blankIndex + 3]
@@ -116,7 +136,9 @@ def expand(expansions, open, algorithm):
         if addNewState(expansions, open, generation, puzzleDown, algorithm):
             return True
 
-    """Expand up"""
+    """
+    Expand up
+    """
     if blankRow == 2 or blankRow == 1:
         puzzleDown = copy.deepcopy(puzzle)
         puzzleDown[blankIndex] = puzzleDown[blankIndex - 3]
@@ -124,7 +146,9 @@ def expand(expansions, open, algorithm):
         if addNewState(expansions, open, generation, puzzleDown, algorithm):
             return True
 
-    """Expand left"""
+    """
+    Expand left
+    """
     if blankColumn == 2 or blankColumn == 1:
         puzzleDown = copy.deepcopy(puzzle)
         puzzleDown[blankIndex] = puzzleDown[blankIndex - 1]
@@ -132,7 +156,9 @@ def expand(expansions, open, algorithm):
         if addNewState(expansions, open, generation, puzzleDown, algorithm):
             return True
 
-    """Expand right"""
+    """
+    Expand right
+    """
     if blankColumn == 0 or blankColumn == 1:
         puzzleDown = copy.deepcopy(puzzle)
         puzzleDown[blankIndex] = puzzleDown[blankIndex + 1]
@@ -140,7 +166,9 @@ def expand(expansions, open, algorithm):
         if addNewState(expansions, open, generation, puzzleDown, algorithm):
             return True
 
-    """after expansion we set the parent generation to closed"""
+    """
+    After expansion parent generation is set to closed.
+    """
 
     open.remove(open[stateIndex])
 
@@ -150,11 +178,14 @@ def expand(expansions, open, algorithm):
 
 def addNewState(expansions, open, generation, puzzle, algorithm):
 
-    """generating the new expanded state. first incrementing the generation.
-    then we decide the distance and the f value and add the state to the list of expansions.
+    """
+    Generation of the new expanded state. First incrementing the generation,
+    then calculating hamming or manhattan distance and the f value,
+    and adding the state to the list of expansions.
 
     Input: list of all nodes, index of parent node, new node, algorithm
-    Output: true if solution"""
+    Output: true if solution
+    """
 
     if algorithm == "manhattan":
         manDis = calcManDis(puzzle)
@@ -165,7 +196,7 @@ def addNewState(expansions, open, generation, puzzle, algorithm):
             if manDis == 0:
                 return True
     else:
-        hamDis = calcHemDis(puzzle)
+        hamDis = calcHamDis(puzzle)
         newState = puzzleStateHamming(puzzle, hamDis, generation + 1, hamDis + generation)
         if not checkDuplicate(expansions, puzzle):
             expansions.append(newState)
@@ -176,10 +207,12 @@ def addNewState(expansions, open, generation, puzzle, algorithm):
 
 def checkDuplicate(expansions, puzzle):
 
-    """Check if a state already exists in the list of states. if so we trash it to avoid duplicates.
+    """
+    Check if a state already exists in the list of states. If so, it is trashed to avoid duplicates.
 
-    Input: list of all expanded nodes & new node.
-    Output: true or false."""
+    Input: list of all expanded nodes, new node
+    Output: true or false
+    """
 
     for x in expansions:
         if x.puzzle == puzzle:
