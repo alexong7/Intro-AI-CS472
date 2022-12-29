@@ -4,13 +4,13 @@ from puzzleGenerator import *
 
 def startMenu():
     print("(1)  Solve 1 Puzzle using Manhattan")
-    print("(2)  Solve 1 Puzzle using Hamming")
+    print("(2)  Solve 1 Puzzle using Hamming ")
     print("(3)  Solve 100 Puzzles using Manhattan")
     print("(4)  Solve 100 Puzzles using Hamming")
     print("(5)  Exit" + "\n")
 
     """
-    Main menu with 5 options to solve 1 or 100 puzzles using either Manhattan or Hamming heuristic.
+    Main menu with 5 options to solve 1 or 100 puzzles using either Manhattan or Hamming distance.
     
     Option 1, 2: hamming() or manhattan() from puzzler.py are called with 1 puzzle.
     Option 3, 4: puzzles object is created with create100Variations() from puzzleGenerator.py.
