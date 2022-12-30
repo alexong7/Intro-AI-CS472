@@ -10,8 +10,8 @@ class puzzleStateManhattan:
     """
     Puzzle class manhattan. Each puzzle containing
     - h = manhattan distance (calculated in manhattan.py)
-    - g = generation (i.e. steps into expansions)
-    - f value (f = h + g)
+    - g = generation (path cost from the initial state to node)
+    - f = f value, f = g + h (estimated cost of the best path that continues from node to goal state)
     - and a closed boolean for already expanded puzzle states.
     """
 
@@ -28,8 +28,8 @@ class puzzleStateHamming:
     """
     Puzzle class hamming. Each puzzle containing
     - h = hamming distance (calculated in hamming.py)
-    - g = generation (i.e. steps into expansions)
-    - f value (f = h + g)
+    - g = generation (path cost from the initial state to node)
+    - f = f value, f = g + h (estimated cost of the best path that continues from node to goal state)
     - and a closed boolean for already expanded puzzle states.
     """
 
