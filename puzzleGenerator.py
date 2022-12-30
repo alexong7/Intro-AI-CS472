@@ -51,7 +51,7 @@ def checkSolvability(checkPuzzle):
 
     """
     Checking for the count of number pairs, where the higher number appears before the lower number.
-    If those pairs appear an even amount of times the puzzle is not solvable.
+    If those pairs appear an odd amount of times the puzzle is not solvable.
 
     Input: puzzle (array from 0 to 8)
     Output: true or false
