@@ -13,7 +13,7 @@ def startMenu():
     Main menu with 5 options to solve 1 or 100 puzzles using either Manhattan or Hamming distance.
     
     Option 1, 2: hamming() or manhattan() from puzzler.py are called with 1 puzzle.
-    Option 3, 4: puzzles object is created with create100Variations() from puzzleGenerator.py.
+    Option 3, 4: puzzles list is created with create100Variations() from puzzleGenerator.py.
     
     manhattan() and hamming() from puzzler.py return statistics on the heuristic's time complexity 
     (execution time), and space complexity, i.e. memory usage (required steps, expanded nodes). 
@@ -94,7 +94,7 @@ def printTotalStats(stats):
         timeList.append(x.time)
 
     """
-    Calculation of mean deviation
+    Calculation of mean
     """
 
     expansionsMean = expansions / 100
@@ -120,9 +120,9 @@ def printTotalStats(stats):
     stepsSD = math.sqrt(stepsSD / 99)
     timeSD = math.sqrt(timeSD / 99)
 
-    print("Expansions [total/mean deviation]: " + str(expansions) + " / " + str(expansionsMean))
-    print("Steps [total/mean deviation]: " + str(steps) + " / " + str(stepsMean))
-    print("Time [total/mean deviation]: " + str(round(time, 3)) + " / " + str(round(timeMean, 3)))
+    print("Expansions [total/mean]: " + str(expansions) + " / " + str(expansionsMean))
+    print("Steps [total/mean]: " + str(steps) + " / " + str(stepsMean))
+    print("Time [total/mean]: " + str(round(time, 3)) + " / " + str(round(timeMean, 3)))
     print()
     print("Expansions standard deviation: " + str(round(expansionsSD, 3)))
     print("Steps standard deviation: " + str(round(stepsSD, 3)))
