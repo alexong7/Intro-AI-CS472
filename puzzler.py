@@ -10,7 +10,7 @@ class puzzleStateManhattan:
     """
     Puzzle class manhattan. Each puzzle containing
     - h = manhattan distance (calculated in manhattan.py)
-    - g = generation (path cost from the initial state to node)
+    - g = generation (steps into expansion, path cost from the initial state to node)
     - f = f value, f = g + h (estimated cost of the best path that continues from node to goal state)
     - and a closed boolean for already expanded puzzle states.
     """
@@ -28,7 +28,7 @@ class puzzleStateHamming:
     """
     Puzzle class hamming. Each puzzle containing
     - h = hamming distance (calculated in hamming.py)
-    - g = generation (path cost from the initial state to node)
+    - g = generation (steps into expansion, path cost from the initial state to node)
     - f = f value, f = g + h (estimated cost of the best path that continues from node to goal state)
     - and a closed boolean for already expanded puzzle states.
     """
@@ -116,7 +116,7 @@ def expand(expansions, open, algorithm):
             stateIndex = open.index(x)
 
     """
-    Next, copy the puzzle to alternate it and calculate the index, row and column
+    Next, copy the puzzle to alternate it and calculate the index, row and column,
     of the blank tile to expand from there.
     """
 
@@ -175,6 +175,7 @@ def expand(expansions, open, algorithm):
     for x in open:
         if x.generation == generation - 1:
             open.remove(x)
+
 
 def addNewState(expansions, open, generation, puzzle, algorithm):
 
