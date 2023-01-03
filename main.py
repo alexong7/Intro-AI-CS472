@@ -3,4 +3,3 @@ from menu import *
 if __name__ == '__main__':
 
     startMenu()
-1

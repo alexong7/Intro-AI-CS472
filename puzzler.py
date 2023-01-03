@@ -46,9 +46,8 @@ class finishStats:
     FinishStats class for returning the stats about puzzle execution to menu.py for printing.
     """
 
-    def __init__(self, expansions, steps, time):
+    def __init__(self, expansions, time):
         self.expansions = expansions
-        self.steps = steps
         self.time = time
 
 
@@ -58,7 +57,7 @@ def hamming(puzzle):
     Starting a hamming run. while loop, until solution is found and stats are returned to menu.py.
 
     Input: starting node
-    Output: stats about execution (time, steps, expanded nodes)
+    Output: stats about execution (time, expanded nodes)
     """
 
     start = time.time()
@@ -72,7 +71,7 @@ def hamming(puzzle):
 
     end = time.time()
     elapsedTime = end - start
-    return finishStats(len(expansions), expansions[len(expansions) - 1].generation, elapsedTime)
+    return finishStats(len(expansions), elapsedTime)
 
 
 def manhattan(puzzle):
@@ -81,7 +80,7 @@ def manhattan(puzzle):
     Starting a manhattan run. while loop, until solution is found and stats returned to menu.py.
 
     Input: starting node
-    Output: stats about execution (time, steps, expanded nodes)
+    Output: stats about execution (time, expanded nodes)
     """
 
     start = time.time()
@@ -95,7 +94,7 @@ def manhattan(puzzle):
 
     end = time.time()
     elapsedTime = end - start
-    return finishStats(len(expansions), expansions[len(expansions) - 1].generation, elapsedTime)
+    return finishStats(len(expansions), elapsedTime)
 
 
 def expand(expansions, open, algorithm):
