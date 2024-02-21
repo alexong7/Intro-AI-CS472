@@ -1,0 +1,241 @@
+Breath First Search Part 2:
+----------------------------------------
+File: S4.txt
+Problem: EightPuzzle((8, 6, 7, 2, 5, 4, 3, 0, 1),
+Algorithm: bfs
+Nodes Generated: 483,563
+Time Taken: 4.168279 seconds
+Path Length: 31
+Path: UULDDRRUULDLDRRUULDLDRRUULLDDRR
+--------------------------------------
+File: S5.txt
+Problem: EightPuzzle((4, 1, 3, 2, 0, 6, 7, 5, 8),
+Algorithm: bfs
+Nodes Generated:   155
+Time Taken: 0.001142 seconds
+Path Length: 6
+Path: LURDDR
+--------------------------------------
+File: S1.txt
+Problem: EightPuzzle((3, 5, 2, 6, 1, 7, 0, 8, 4),
+Algorithm: bfs
+Nodes Generated: 259,725
+Time Taken: 2.311763 seconds
+Path Length: 24
+Path: UURDDRULLDRRULLURRDLLDRR
+--------------------------------------
+File: S2.txt
+Problem: EightPuzzle((6, 5, 1, 4, 8, 2, 0, 3, 7),
+Algorithm: bfs
+Nodes Generated: 77,992
+Time Taken: 0.642488 seconds
+Path Length: 20
+Path: UURRDLDRULLURRDLLDRR
+--------------------------------------
+
+Cannot Solve S3.txt
+Problem: EightPuzzle((7, 5, 2, 6, 3, 1, 4, 8, 0),
+--------------------------------------
+
+TOTAL
+Algorithm: bfs
+Nodes Generated: 821,435
+Time Taken: 7.125884 seconds
+Avg Run Time: 1.4251767635345458 seconds
+Avg Nodes Explored: 164287.0
+--------------------------------------
+
+
+
+
+A* Search w/ h1 (hamming) Part 2:
+----------------------------------------
+File: S4.txt
+Problem: EightPuzzle((8, 6, 7, 2, 5, 4, 3, 0, 1),
+Algorithm: h1
+Nodes Generated: 340,141
+Time Taken: 4.163764 seconds
+Path Length: 31
+Path: RUULLDDRRULLDRRULURDLULDDRRULDR
+--------------------------------------
+File: S5.txt
+Problem: EightPuzzle((4, 1, 3, 2, 0, 6, 7, 5, 8),
+Algorithm: h1
+Nodes Generated:    27
+Time Taken: 0.000300 seconds
+Path Length: 6
+Path: LURDDR
+--------------------------------------
+File: S1.txt
+Problem: EightPuzzle((3, 5, 2, 6, 1, 7, 0, 8, 4),
+Algorithm: h1
+Nodes Generated: 34,827
+Time Taken: 0.389314 seconds
+Path Length: 24
+Path: UURDDRULLDRRULLURRDLLDRR
+--------------------------------------
+File: S2.txt
+Problem: EightPuzzle((6, 5, 1, 4, 8, 2, 0, 3, 7),
+Algorithm: h1
+Nodes Generated: 5,189
+Time Taken: 0.057137 seconds
+Path Length: 20
+Path: UURRDLDRULLURRDLLDRR
+--------------------------------------
+
+Cannot Solve S3.txt
+Problem: EightPuzzle((7, 5, 2, 6, 3, 1, 4, 8, 0),
+--------------------------------------
+
+TOTAL
+Algorithm: h1
+Nodes Generated: 380,184
+Time Taken: 4.613004 seconds
+Avg Run Time: 0.9226007461547852 seconds
+Avg Nodes Explored: 76036.8
+--------------------------------------
+
+
+
+A* Search w/ h2 (manhatten) Part 2:
+----------------------------------------
+File: S4.txt
+Problem: EightPuzzle((8, 6, 7, 2, 5, 4, 3, 0, 1),
+Algorithm: h2
+Nodes Generated: 125,709
+Time Taken: 1.642891 seconds
+Path Length: 31
+Path: RUULDLURDDLURRULLDRDRULDLURURDD
+--------------------------------------
+File: S5.txt
+Problem: EightPuzzle((4, 1, 3, 2, 0, 6, 7, 5, 8),
+Algorithm: h2
+Nodes Generated:    19
+Time Taken: 0.000279 seconds
+Path Length: 6
+Path: LURDDR
+--------------------------------------
+File: S1.txt
+Problem: EightPuzzle((3, 5, 2, 6, 1, 7, 0, 8, 4),
+Algorithm: h2
+Nodes Generated: 17,205
+Time Taken: 0.200263 seconds
+Path Length: 26
+Path: URRULLDRRULDDRULDLURRDLURD
+--------------------------------------
+File: S2.txt
+Problem: EightPuzzle((6, 5, 1, 4, 8, 2, 0, 3, 7),
+Algorithm: h2
+Nodes Generated: 8,445
+Time Taken: 0.095505 seconds
+Path Length: 20
+Path: UURRDLDRULLURRDLLDRR
+--------------------------------------
+
+Cannot Solve S3.txt
+Problem: EightPuzzle((7, 5, 2, 6, 3, 1, 4, 8, 0),
+--------------------------------------
+
+TOTAL
+Algorithm: h2
+Nodes Generated: 151,378
+Time Taken: 1.940282 seconds
+Avg Run Time: 0.38805642127990725 seconds
+Avg Nodes Explored: 30275.6
+--------------------------------------
+
+
+
+A* Search w/ h3 (euclidean) Part 2:
+File: S4.txt
+Problem: EightPuzzle((8, 6, 7, 2, 5, 4, 3, 0, 1),
+Algorithm: h3
+Nodes Generated: 495,112
+Time Taken: 6.479087 seconds
+Path Length: 31
+Path: UURDLLDRRULLURRDLDLUURDDLUURRDD
+--------------------------------------
+File: S5.txt
+Problem: EightPuzzle((4, 1, 3, 2, 0, 6, 7, 5, 8),
+Algorithm: h3
+Nodes Generated:   249
+Time Taken: 0.002465 seconds
+Path Length: 6
+Path: LURDDR
+--------------------------------------
+File: S1.txt
+Problem: EightPuzzle((3, 5, 2, 6, 1, 7, 0, 8, 4),
+Algorithm: h3
+Nodes Generated: 254,442
+Time Taken: 3.518525 seconds
+Path Length: 26
+Path: URDLURRDLULDRURULLDRRULDRD
+--------------------------------------
+File: S2.txt
+Problem: EightPuzzle((6, 5, 1, 4, 8, 2, 0, 3, 7),
+Algorithm: h3
+Nodes Generated: 112,005
+Time Taken: 1.489768 seconds
+Path Length: 20
+Path: UURRDLDRULLURRDLLDRR
+--------------------------------------
+
+Cannot Solve S3.txt
+Problem: EightPuzzle((7, 5, 2, 6, 3, 1, 4, 8, 0),
+--------------------------------------
+
+TOTAL
+Algorithm: h3
+Nodes Generated: 861,808
+Time Taken: 11.508002 seconds
+Avg Run Time: 2.3016004085540773 seconds
+Avg Nodes Explored: 172361.6
+--------------------------------------
+
+
+
+IDS Part 2:
+-------------------------------------
+File: S4.txt
+Problem: EightPuzzle((8, 6, 7, 2, 5, 4, 3, 0, 1),
+Algorithm: ids
+Nodes Generated Before Timeout: 69,692,609
+Total time taken >15 minutes!
+--------------------------------------
+File: S5.txt
+Problem: EightPuzzle((4, 1, 3, 2, 0, 6, 7, 5, 8),
+Algorithm: ids
+Nodes Generated:   314
+Time Taken: 0.002603 seconds
+Path Length: 6
+Path: LURDDR
+--------------------------------------
+File: S1.txt
+Problem: EightPuzzle((3, 5, 2, 6, 1, 7, 0, 8, 4),
+Algorithm: ids
+Nodes Generated: 6,764,573
+Time Taken: 82.464467 seconds
+Path Length: 24
+Path: UURDDRULLDRRULLURRDLLDRR
+--------------------------------------
+File: S2.txt
+Problem: EightPuzzle((6, 5, 1, 4, 8, 2, 0, 3, 7),
+Algorithm: ids
+Nodes Generated: 720,464
+Time Taken: 7.990206 seconds
+Path Length: 20
+Path: UURRDLDRULLURRDLLDRR
+--------------------------------------
+
+Cannot Solve S3.txt
+Problem: EightPuzzle((7, 5, 2, 6, 3, 1, 4, 8, 0),
+--------------------------------------
+
+TOTAL
+Algorithm: ids
+Nodes Generated: 7,485,351
+Time Taken: 1258.444892 seconds
+Avg Run Time: 251.688978433609 seconds
+Avg Nodes Explored: 1497070.2
+--------------------------------------
+

@@ -1,0 +1,2414 @@
+
+
+>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>> L8 Search <<<<<<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+*** BFS L8: ***
+----------------------------------------
+File: 258.txt
+Problem: EightPuzzle((5, 2, 0, 1, 4, 3, 7, 8, 6),
+Algorithm: bfs
+Nodes Generated:   417
+Time Taken: 0.003136 seconds
+Path Length: 8
+Path: LLDRURDD
+--------------------------------------
+File: 160.txt
+Problem: EightPuzzle((0, 2, 3, 1, 7, 6, 5, 4, 8),
+Algorithm: bfs
+Nodes Generated:   256
+Time Taken: 0.001545 seconds
+Path Length: 8
+Path: DDRULDRR
+--------------------------------------
+File: 164.txt
+Problem: EightPuzzle((2, 3, 6, 1, 5, 8, 4, 7, 0),
+Algorithm: bfs
+Nodes Generated:   265
+Time Taken: 0.002051 seconds
+Path Length: 8
+Path: UULLDDRR
+--------------------------------------
+File: 158.txt
+Problem: EightPuzzle((1, 3, 6, 5, 0, 2, 4, 7, 8),
+Algorithm: bfs
+Nodes Generated:   510
+Time Taken: 0.003319 seconds
+Path Length: 8
+Path: RULDLDRR
+--------------------------------------
+File: 238.txt
+Problem: EightPuzzle((1, 3, 5, 4, 8, 2, 7, 6, 0),
+Algorithm: bfs
+Nodes Generated:   396
+Time Taken: 0.002383 seconds
+Path Length: 8
+Path: LURULDRD
+--------------------------------------
+File: 210.txt
+Problem: EightPuzzle((1, 3, 6, 4, 5, 2, 7, 8, 0),
+Algorithm: bfs
+Nodes Generated:   391
+Time Taken: 0.002864 seconds
+Path Length: 8
+Path: LURULDDR
+--------------------------------------
+File: 198.txt
+Problem: EightPuzzle((1, 3, 0, 4, 2, 8, 7, 6, 5),
+Algorithm: bfs
+Nodes Generated:   361
+Time Taken: 0.002767 seconds
+Path Length: 8
+Path: LDDRULDR
+--------------------------------------
+File: 239.txt
+Problem: EightPuzzle((1, 3, 5, 4, 2, 6, 0, 7, 8),
+Algorithm: bfs
+Nodes Generated:   411
+Time Taken: 0.002997 seconds
+Path Length: 8
+Path: RRUULDRD
+--------------------------------------
+File: 234.txt
+Problem: EightPuzzle((0, 3, 5, 1, 4, 2, 7, 8, 6),
+Algorithm: bfs
+Nodes Generated:   324
+Time Taken: 0.003121 seconds
+Path Length: 8
+Path: DRRULDRD
+--------------------------------------
+File: 208.txt
+Problem: EightPuzzle((0, 1, 6, 4, 3, 2, 7, 5, 8),
+Algorithm: bfs
+Nodes Generated:   382
+Time Taken: 0.002933 seconds
+Path Length: 8
+Path: RDRULDDR
+--------------------------------------
+File: 195.txt
+Problem: EightPuzzle((0, 2, 3, 1, 4, 8, 7, 6, 5),
+Algorithm: bfs
+Nodes Generated:   313
+Time Taken: 0.002349 seconds
+Path Length: 8
+Path: DRDRULDR
+--------------------------------------
+File: 154.txt
+Problem: EightPuzzle((1, 2, 3, 5, 6, 8, 0, 4, 7),
+Algorithm: bfs
+Nodes Generated:   430
+Time Taken: 0.003069 seconds
+Path Length: 8
+Path: RRULLDRR
+--------------------------------------
+File: 236.txt
+Problem: EightPuzzle((0, 1, 5, 4, 3, 2, 7, 8, 6),
+Algorithm: bfs
+Nodes Generated:   387
+Time Taken: 0.003424 seconds
+Path Length: 8
+Path: RDRULDRD
+--------------------------------------
+File: 193.txt
+Problem: EightPuzzle((1, 2, 3, 6, 0, 8, 4, 7, 5),
+Algorithm: bfs
+Nodes Generated:   495
+Time Taken: 0.003913 seconds
+Path Length: 8
+Path: LDRRULDR
+--------------------------------------
+File: 225.txt
+Problem: EightPuzzle((1, 2, 3, 7, 5, 6, 8, 4, 0),
+Algorithm: bfs
+Nodes Generated:   306
+Time Taken: 0.002114 seconds
+Path Length: 8
+Path: ULDLURRD
+--------------------------------------
+File: 152.txt
+Problem: EightPuzzle((0, 1, 2, 5, 6, 3, 4, 7, 8),
+Algorithm: bfs
+Nodes Generated:   430
+Time Taken: 0.003057 seconds
+Path Length: 8
+Path: RRDLLDRR
+--------------------------------------
+File: 224.txt
+Problem: EightPuzzle((1, 2, 0, 7, 5, 3, 8, 4, 6),
+Algorithm: bfs
+Nodes Generated:   306
+Time Taken: 0.002184 seconds
+Path Length: 8
+Path: DLDLURRD
+--------------------------------------
+File: 256.txt
+Problem: EightPuzzle((4, 1, 2, 7, 5, 3, 8, 6, 0),
+Algorithm: bfs
+Nodes Generated:   414
+Time Taken: 0.003119 seconds
+Path Length: 8
+Path: LLUURRDD
+--------------------------------------
+File: 250.txt
+Problem: EightPuzzle((4, 1, 0, 5, 3, 2, 7, 8, 6),
+Algorithm: bfs
+Nodes Generated:   327
+Time Taken: 0.002507 seconds
+Path Length: 8
+Path: DLLURRDD
+--------------------------------------
+File: 253.txt
+Problem: EightPuzzle((4, 2, 0, 5, 1, 3, 7, 8, 6),
+Algorithm: bfs
+Nodes Generated:   375
+Time Taken: 0.002787 seconds
+Path Length: 8
+Path: LDLURRDD
+--------------------------------------
+TOTAL
+Algorithm: bfs
+Nodes Generated: 7,496
+Time Taken: 0.062007 seconds
+Avg Run Time: 0.0031003475189208983 seconds
+Avg Nodes Explored: 374.8
+--------------------------------------
+
+
+
+
+*** A* (h1) L8: ***
+----------------------------------------
+File: 258.txt
+Problem: EightPuzzle((5, 2, 0, 1, 4, 3, 7, 8, 6),
+Algorithm: h1
+Nodes Generated:    39
+Time Taken: 0.000460 seconds
+Path Length: 8
+Path: LLDRURDD
+--------------------------------------
+File: 160.txt
+Problem: EightPuzzle((0, 2, 3, 1, 7, 6, 5, 4, 8),
+Algorithm: h1
+Nodes Generated:    39
+Time Taken: 0.000455 seconds
+Path Length: 8
+Path: DDRULDRR
+--------------------------------------
+File: 164.txt
+Problem: EightPuzzle((2, 3, 6, 1, 5, 8, 4, 7, 0),
+Algorithm: h1
+Nodes Generated:    20
+Time Taken: 0.000342 seconds
+Path Length: 8
+Path: UULLDDRR
+--------------------------------------
+File: 158.txt
+Problem: EightPuzzle((1, 3, 6, 5, 0, 2, 4, 7, 8),
+Algorithm: h1
+Nodes Generated:    45
+Time Taken: 0.000562 seconds
+Path Length: 8
+Path: RULDLDRR
+--------------------------------------
+File: 238.txt
+Problem: EightPuzzle((1, 3, 5, 4, 8, 2, 7, 6, 0),
+Algorithm: h1
+Nodes Generated:    44
+Time Taken: 0.000484 seconds
+Path Length: 8
+Path: LURULDRD
+--------------------------------------
+File: 210.txt
+Problem: EightPuzzle((1, 3, 6, 4, 5, 2, 7, 8, 0),
+Algorithm: h1
+Nodes Generated:    53
+Time Taken: 0.000519 seconds
+Path Length: 8
+Path: LURULDDR
+--------------------------------------
+File: 198.txt
+Problem: EightPuzzle((1, 3, 0, 4, 2, 8, 7, 6, 5),
+Algorithm: h1
+Nodes Generated:    48
+Time Taken: 0.000493 seconds
+Path Length: 8
+Path: LDDRULDR
+--------------------------------------
+File: 239.txt
+Problem: EightPuzzle((1, 3, 5, 4, 2, 6, 0, 7, 8),
+Algorithm: h1
+Nodes Generated:    32
+Time Taken: 0.000350 seconds
+Path Length: 8
+Path: RRUULDRD
+--------------------------------------
+File: 234.txt
+Problem: EightPuzzle((0, 3, 5, 1, 4, 2, 7, 8, 6),
+Algorithm: h1
+Nodes Generated:    32
+Time Taken: 0.000448 seconds
+Path Length: 8
+Path: DRRULDRD
+--------------------------------------
+File: 208.txt
+Problem: EightPuzzle((0, 1, 6, 4, 3, 2, 7, 5, 8),
+Algorithm: h1
+Nodes Generated:    31
+Time Taken: 0.000572 seconds
+Path Length: 8
+Path: RDRULDDR
+--------------------------------------
+File: 195.txt
+Problem: EightPuzzle((0, 2, 3, 1, 4, 8, 7, 6, 5),
+Algorithm: h1
+Nodes Generated:    39
+Time Taken: 0.000740 seconds
+Path Length: 8
+Path: DRDRULDR
+--------------------------------------
+File: 154.txt
+Problem: EightPuzzle((1, 2, 3, 5, 6, 8, 0, 4, 7),
+Algorithm: h1
+Nodes Generated:    45
+Time Taken: 0.000605 seconds
+Path Length: 8
+Path: RRULLDRR
+--------------------------------------
+File: 236.txt
+Problem: EightPuzzle((0, 1, 5, 4, 3, 2, 7, 8, 6),
+Algorithm: h1
+Nodes Generated:    36
+Time Taken: 0.000403 seconds
+Path Length: 8
+Path: RDRULDRD
+--------------------------------------
+File: 193.txt
+Problem: EightPuzzle((1, 2, 3, 6, 0, 8, 4, 7, 5),
+Algorithm: h1
+Nodes Generated:    50
+Time Taken: 0.000455 seconds
+Path Length: 8
+Path: LDRRULDR
+--------------------------------------
+File: 225.txt
+Problem: EightPuzzle((1, 2, 3, 7, 5, 6, 8, 4, 0),
+Algorithm: h1
+Nodes Generated:    66
+Time Taken: 0.000634 seconds
+Path Length: 8
+Path: ULDLURRD
+--------------------------------------
+File: 152.txt
+Problem: EightPuzzle((0, 1, 2, 5, 6, 3, 4, 7, 8),
+Algorithm: h1
+Nodes Generated:    22
+Time Taken: 0.000258 seconds
+Path Length: 8
+Path: RRDLLDRR
+--------------------------------------
+File: 224.txt
+Problem: EightPuzzle((1, 2, 0, 7, 5, 3, 8, 4, 6),
+Algorithm: h1
+Nodes Generated:    50
+Time Taken: 0.000486 seconds
+Path Length: 8
+Path: DLDLURRD
+--------------------------------------
+File: 256.txt
+Problem: EightPuzzle((4, 1, 2, 7, 5, 3, 8, 6, 0),
+Algorithm: h1
+Nodes Generated:    23
+Time Taken: 0.000253 seconds
+Path Length: 8
+Path: LLUURRDD
+--------------------------------------
+File: 250.txt
+Problem: EightPuzzle((4, 1, 0, 5, 3, 2, 7, 8, 6),
+Algorithm: h1
+Nodes Generated:    29
+Time Taken: 0.000303 seconds
+Path Length: 8
+Path: DLLURRDD
+--------------------------------------
+File: 253.txt
+Problem: EightPuzzle((4, 2, 0, 5, 1, 3, 7, 8, 6),
+Algorithm: h1
+Nodes Generated:    47
+Time Taken: 0.000462 seconds
+Path Length: 8
+Path: LDLURRDD
+--------------------------------------
+TOTAL
+Algorithm: h1
+Nodes Generated:   790
+Time Taken: 0.016174 seconds
+Avg Run Time: 0.0008087038993835449 seconds
+Avg Nodes Explored: 39.5
+--------------------------------------
+
+
+
+*** A* (h2) L8: ***
+----------------------------------------
+File: 258.txt
+Problem: EightPuzzle((5, 2, 0, 1, 4, 3, 7, 8, 6),
+Algorithm: h2
+Nodes Generated:    31
+Time Taken: 0.000386 seconds
+Path Length: 8
+Path: LLDRURDD
+--------------------------------------
+File: 160.txt
+Problem: EightPuzzle((0, 2, 3, 1, 7, 6, 5, 4, 8),
+Algorithm: h2
+Nodes Generated:    24
+Time Taken: 0.000280 seconds
+Path Length: 8
+Path: DDRULDRR
+--------------------------------------
+File: 164.txt
+Problem: EightPuzzle((2, 3, 6, 1, 5, 8, 4, 7, 0),
+Algorithm: h2
+Nodes Generated:    20
+Time Taken: 0.000231 seconds
+Path Length: 8
+Path: UULLDDRR
+--------------------------------------
+File: 158.txt
+Problem: EightPuzzle((1, 3, 6, 5, 0, 2, 4, 7, 8),
+Algorithm: h2
+Nodes Generated:    26
+Time Taken: 0.000301 seconds
+Path Length: 8
+Path: RULDLDRR
+--------------------------------------
+File: 238.txt
+Problem: EightPuzzle((1, 3, 5, 4, 8, 2, 7, 6, 0),
+Algorithm: h2
+Nodes Generated:    46
+Time Taken: 0.000567 seconds
+Path Length: 8
+Path: LURULDRD
+--------------------------------------
+File: 210.txt
+Problem: EightPuzzle((1, 3, 6, 4, 5, 2, 7, 8, 0),
+Algorithm: h2
+Nodes Generated:   123
+Time Taken: 0.001065 seconds
+Path Length: 8
+Path: LURULDDR
+--------------------------------------
+File: 198.txt
+Problem: EightPuzzle((1, 3, 0, 4, 2, 8, 7, 6, 5),
+Algorithm: h2
+Nodes Generated:    36
+Time Taken: 0.000357 seconds
+Path Length: 8
+Path: LDRDLURD
+--------------------------------------
+File: 239.txt
+Problem: EightPuzzle((1, 3, 5, 4, 2, 6, 0, 7, 8),
+Algorithm: h2
+Nodes Generated:    22
+Time Taken: 0.000246 seconds
+Path Length: 8
+Path: RRUULDRD
+--------------------------------------
+File: 234.txt
+Problem: EightPuzzle((0, 3, 5, 1, 4, 2, 7, 8, 6),
+Algorithm: h2
+Nodes Generated:    29
+Time Taken: 0.000331 seconds
+Path Length: 8
+Path: DRRULDRD
+--------------------------------------
+File: 208.txt
+Problem: EightPuzzle((0, 1, 6, 4, 3, 2, 7, 5, 8),
+Algorithm: h2
+Nodes Generated:    26
+Time Taken: 0.000309 seconds
+Path Length: 8
+Path: RDRULDDR
+--------------------------------------
+File: 195.txt
+Problem: EightPuzzle((0, 2, 3, 1, 4, 8, 7, 6, 5),
+Algorithm: h2
+Nodes Generated:    34
+Time Taken: 0.000413 seconds
+Path Length: 8
+Path: DRRDLURD
+--------------------------------------
+File: 154.txt
+Problem: EightPuzzle((1, 2, 3, 5, 6, 8, 0, 4, 7),
+Algorithm: h2
+Nodes Generated:    83
+Time Taken: 0.000838 seconds
+Path Length: 8
+Path: RRULLDRR
+--------------------------------------
+File: 236.txt
+Problem: EightPuzzle((0, 1, 5, 4, 3, 2, 7, 8, 6),
+Algorithm: h2
+Nodes Generated:    24
+Time Taken: 0.000300 seconds
+Path Length: 8
+Path: RRDLURDD
+--------------------------------------
+File: 193.txt
+Problem: EightPuzzle((1, 2, 3, 6, 0, 8, 4, 7, 5),
+Algorithm: h2
+Nodes Generated:    60
+Time Taken: 0.000637 seconds
+Path Length: 8
+Path: LDRRULDR
+--------------------------------------
+File: 225.txt
+Problem: EightPuzzle((1, 2, 3, 7, 5, 6, 8, 4, 0),
+Algorithm: h2
+Nodes Generated:    72
+Time Taken: 0.000672 seconds
+Path Length: 8
+Path: ULDLURRD
+--------------------------------------
+File: 152.txt
+Problem: EightPuzzle((0, 1, 2, 5, 6, 3, 4, 7, 8),
+Algorithm: h2
+Nodes Generated:    22
+Time Taken: 0.000281 seconds
+Path Length: 8
+Path: RRDLLDRR
+--------------------------------------
+File: 224.txt
+Problem: EightPuzzle((1, 2, 0, 7, 5, 3, 8, 4, 6),
+Algorithm: h2
+Nodes Generated:    59
+Time Taken: 0.000636 seconds
+Path Length: 8
+Path: DLDLURRD
+--------------------------------------
+File: 256.txt
+Problem: EightPuzzle((4, 1, 2, 7, 5, 3, 8, 6, 0),
+Algorithm: h2
+Nodes Generated:    23
+Time Taken: 0.000345 seconds
+Path Length: 8
+Path: LLUURRDD
+--------------------------------------
+File: 250.txt
+Problem: EightPuzzle((4, 1, 0, 5, 3, 2, 7, 8, 6),
+Algorithm: h2
+Nodes Generated:    24
+Time Taken: 0.000367 seconds
+Path Length: 8
+Path: DLLURRDD
+--------------------------------------
+File: 253.txt
+Problem: EightPuzzle((4, 2, 0, 5, 1, 3, 7, 8, 6),
+Algorithm: h2
+Nodes Generated:    42
+Time Taken: 0.000616 seconds
+Path Length: 8
+Path: LDLURRDD
+--------------------------------------
+TOTAL
+Algorithm: h2
+Nodes Generated:   826
+Time Taken: 0.014798 seconds
+Avg Run Time: 0.000739896297454834 seconds
+Avg Nodes Explored: 41.3
+--------------------------------------
+
+
+*** A* (h3) L8: ***
+----------------------------------------
+File: 258.txt
+Problem: EightPuzzle((5, 2, 0, 1, 4, 3, 7, 8, 6),
+Algorithm: h3
+Nodes Generated:   180
+Time Taken: 0.002477 seconds
+Path Length: 8
+Path: LLDRURDD
+--------------------------------------
+File: 160.txt
+Problem: EightPuzzle((0, 2, 3, 1, 7, 6, 5, 4, 8),
+Algorithm: h3
+Nodes Generated:   540
+Time Taken: 0.004587 seconds
+Path Length: 8
+Path: DRDLURDR
+--------------------------------------
+File: 164.txt
+Problem: EightPuzzle((2, 3, 6, 1, 5, 8, 4, 7, 0),
+Algorithm: h3
+Nodes Generated:   393
+Time Taken: 0.003731 seconds
+Path Length: 8
+Path: UULLDDRR
+--------------------------------------
+File: 158.txt
+Problem: EightPuzzle((1, 3, 6, 5, 0, 2, 4, 7, 8),
+Algorithm: h3
+Nodes Generated:   870
+Time Taken: 0.008731 seconds
+Path Length: 8
+Path: RULDLDRR
+--------------------------------------
+File: 238.txt
+Problem: EightPuzzle((1, 3, 5, 4, 8, 2, 7, 6, 0),
+Algorithm: h3
+Nodes Generated:   278
+Time Taken: 0.002457 seconds
+Path Length: 8
+Path: LURULDRD
+--------------------------------------
+File: 210.txt
+Problem: EightPuzzle((1, 3, 6, 4, 5, 2, 7, 8, 0),
+Algorithm: h3
+Nodes Generated:   843
+Time Taken: 0.008776 seconds
+Path Length: 8
+Path: LURULDDR
+--------------------------------------
+File: 198.txt
+Problem: EightPuzzle((1, 3, 0, 4, 2, 8, 7, 6, 5),
+Algorithm: h3
+Nodes Generated:   222
+Time Taken: 0.001965 seconds
+Path Length: 8
+Path: LDRDLURD
+--------------------------------------
+File: 239.txt
+Problem: EightPuzzle((1, 3, 5, 4, 2, 6, 0, 7, 8),
+Algorithm: h3
+Nodes Generated:   184
+Time Taken: 0.001665 seconds
+Path Length: 8
+Path: RRUULDRD
+--------------------------------------
+File: 234.txt
+Problem: EightPuzzle((0, 3, 5, 1, 4, 2, 7, 8, 6),
+Algorithm: h3
+Nodes Generated:   251
+Time Taken: 0.002267 seconds
+Path Length: 8
+Path: DRRULDRD
+--------------------------------------
+File: 208.txt
+Problem: EightPuzzle((0, 1, 6, 4, 3, 2, 7, 5, 8),
+Algorithm: h3
+Nodes Generated:   743
+Time Taken: 0.007408 seconds
+Path Length: 8
+Path: RDRULDDR
+--------------------------------------
+File: 195.txt
+Problem: EightPuzzle((0, 2, 3, 1, 4, 8, 7, 6, 5),
+Algorithm: h3
+Nodes Generated:   189
+Time Taken: 0.002389 seconds
+Path Length: 8
+Path: DRRDLURD
+--------------------------------------
+File: 154.txt
+Problem: EightPuzzle((1, 2, 3, 5, 6, 8, 0, 4, 7),
+Algorithm: h3
+Nodes Generated:   531
+Time Taken: 0.004408 seconds
+Path Length: 8
+Path: RRULLDRR
+--------------------------------------
+File: 236.txt
+Problem: EightPuzzle((0, 1, 5, 4, 3, 2, 7, 8, 6),
+Algorithm: h3
+Nodes Generated:   226
+Time Taken: 0.001995 seconds
+Path Length: 8
+Path: RRDLURDD
+--------------------------------------
+File: 193.txt
+Problem: EightPuzzle((1, 2, 3, 6, 0, 8, 4, 7, 5),
+Algorithm: h3
+Nodes Generated:   512
+Time Taken: 0.004777 seconds
+Path Length: 10
+Path: LDRURDLURD
+--------------------------------------
+File: 225.txt
+Problem: EightPuzzle((1, 2, 3, 7, 5, 6, 8, 4, 0),
+Algorithm: h3
+Nodes Generated:   243
+Time Taken: 0.003219 seconds
+Path Length: 8
+Path: ULDLURRD
+--------------------------------------
+File: 152.txt
+Problem: EightPuzzle((0, 1, 2, 5, 6, 3, 4, 7, 8),
+Algorithm: h3
+Nodes Generated:   607
+Time Taken: 0.005381 seconds
+Path Length: 8
+Path: RRDLLDRR
+--------------------------------------
+File: 224.txt
+Problem: EightPuzzle((1, 2, 0, 7, 5, 3, 8, 4, 6),
+Algorithm: h3
+Nodes Generated:   269
+Time Taken: 0.002664 seconds
+Path Length: 8
+Path: DLDLURRD
+--------------------------------------
+File: 256.txt
+Problem: EightPuzzle((4, 1, 2, 7, 5, 3, 8, 6, 0),
+Algorithm: h3
+Nodes Generated:   236
+Time Taken: 0.002058 seconds
+Path Length: 8
+Path: LLUURRDD
+--------------------------------------
+File: 250.txt
+Problem: EightPuzzle((4, 1, 0, 5, 3, 2, 7, 8, 6),
+Algorithm: h3
+Nodes Generated:   200
+Time Taken: 0.002012 seconds
+Path Length: 8
+Path: DLLURRDD
+--------------------------------------
+File: 253.txt
+Problem: EightPuzzle((4, 2, 0, 5, 1, 3, 7, 8, 6),
+Algorithm: h3
+Nodes Generated:   189
+Time Taken: 0.002772 seconds
+Path Length: 8
+Path: LDLURRDD
+--------------------------------------
+TOTAL
+Algorithm: h3
+Nodes Generated: 7,706
+Time Taken: 0.081269 seconds
+Avg Run Time: 0.004063451290130615 seconds
+Avg Nodes Explored: 385.3
+--------------------------------------
+
+
+
+*** IDS L8: ***
+----------------------------------------
+File: 258.txt
+Problem: EightPuzzle((5, 2, 0, 1, 4, 3, 7, 8, 6),
+Algorithm: ids
+Nodes Generated:   590
+Time Taken: 0.005027 seconds
+Path Length: 8
+Path: LLDRURDD
+--------------------------------------
+File: 160.txt
+Problem: EightPuzzle((0, 2, 3, 1, 7, 6, 5, 4, 8),
+Algorithm: ids
+Nodes Generated:   866
+Time Taken: 0.006502 seconds
+Path Length: 8
+Path: DRDLURDR
+--------------------------------------
+File: 164.txt
+Problem: EightPuzzle((2, 3, 6, 1, 5, 8, 4, 7, 0),
+Algorithm: ids
+Nodes Generated:   951
+Time Taken: 0.008594 seconds
+Path Length: 8
+Path: UULLDDRR
+--------------------------------------
+File: 158.txt
+Problem: EightPuzzle((1, 3, 6, 5, 0, 2, 4, 7, 8),
+Algorithm: ids
+Nodes Generated:   887
+Time Taken: 0.007144 seconds
+Path Length: 8
+Path: RULDLDRR
+--------------------------------------
+File: 238.txt
+Problem: EightPuzzle((1, 3, 5, 4, 8, 2, 7, 6, 0),
+Algorithm: ids
+Nodes Generated:   665
+Time Taken: 0.006526 seconds
+Path Length: 8
+Path: LURULDRD
+--------------------------------------
+File: 210.txt
+Problem: EightPuzzle((1, 3, 6, 4, 5, 2, 7, 8, 0),
+Algorithm: ids
+Nodes Generated:   671
+Time Taken: 0.005340 seconds
+Path Length: 8
+Path: LURULDDR
+--------------------------------------
+File: 198.txt
+Problem: EightPuzzle((1, 3, 0, 4, 2, 8, 7, 6, 5),
+Algorithm: ids
+Nodes Generated:   642
+Time Taken: 0.005005 seconds
+Path Length: 8
+Path: LDRDLURD
+--------------------------------------
+File: 239.txt
+Problem: EightPuzzle((1, 3, 5, 4, 2, 6, 0, 7, 8),
+Algorithm: ids
+Nodes Generated:   612
+Time Taken: 0.006039 seconds
+Path Length: 8
+Path: RRUULDRD
+--------------------------------------
+File: 234.txt
+Problem: EightPuzzle((0, 3, 5, 1, 4, 2, 7, 8, 6),
+Algorithm: ids
+Nodes Generated:   819
+Time Taken: 0.006601 seconds
+Path Length: 8
+Path: DRRULDRD
+--------------------------------------
+File: 208.txt
+Problem: EightPuzzle((0, 1, 6, 4, 3, 2, 7, 5, 8),
+Algorithm: ids
+Nodes Generated:   671
+Time Taken: 0.005515 seconds
+Path Length: 8
+Path: RDRULDDR
+--------------------------------------
+File: 195.txt
+Problem: EightPuzzle((0, 2, 3, 1, 4, 8, 7, 6, 5),
+Algorithm: ids
+Nodes Generated:   796
+Time Taken: 0.007177 seconds
+Path Length: 8
+Path: DRRDLURD
+--------------------------------------
+File: 154.txt
+Problem: EightPuzzle((1, 2, 3, 5, 6, 8, 0, 4, 7),
+Algorithm: ids
+Nodes Generated:   564
+Time Taken: 0.004564 seconds
+Path Length: 8
+Path: RRULLDRR
+--------------------------------------
+File: 236.txt
+Problem: EightPuzzle((0, 1, 5, 4, 3, 2, 7, 8, 6),
+Algorithm: ids
+Nodes Generated:   590
+Time Taken: 0.013554 seconds
+Path Length: 8
+Path: RRDLURDD
+--------------------------------------
+File: 193.txt
+Problem: EightPuzzle((1, 2, 3, 6, 0, 8, 4, 7, 5),
+Algorithm: ids
+Nodes Generated:   928
+Time Taken: 0.014177 seconds
+Path Length: 8
+Path: LDRRULDR
+--------------------------------------
+File: 225.txt
+Problem: EightPuzzle((1, 2, 3, 7, 5, 6, 8, 4, 0),
+Algorithm: ids
+Nodes Generated:   863
+Time Taken: 0.009847 seconds
+Path Length: 8
+Path: ULDLURRD
+--------------------------------------
+File: 152.txt
+Problem: EightPuzzle((0, 1, 2, 5, 6, 3, 4, 7, 8),
+Algorithm: ids
+Nodes Generated:   564
+Time Taken: 0.005688 seconds
+Path Length: 8
+Path: RRDLLDRR
+--------------------------------------
+File: 224.txt
+Problem: EightPuzzle((1, 2, 0, 7, 5, 3, 8, 4, 6),
+Algorithm: ids
+Nodes Generated:   863
+Time Taken: 0.007779 seconds
+Path Length: 8
+Path: DLDLURRD
+--------------------------------------
+File: 256.txt
+Problem: EightPuzzle((4, 1, 2, 7, 5, 3, 8, 6, 0),
+Algorithm: ids
+Nodes Generated:   605
+Time Taken: 0.005902 seconds
+Path Length: 8
+Path: LLUURRDD
+--------------------------------------
+File: 250.txt
+Problem: EightPuzzle((4, 1, 0, 5, 3, 2, 7, 8, 6),
+Algorithm: ids
+Nodes Generated:   812
+Time Taken: 0.006878 seconds
+Path Length: 8
+Path: DLLURRDD
+--------------------------------------
+File: 253.txt
+Problem: EightPuzzle((4, 2, 0, 5, 1, 3, 7, 8, 6),
+Algorithm: ids
+Nodes Generated:   707
+Time Taken: 0.007682 seconds
+Path Length: 8
+Path: LDLURRDD
+--------------------------------------
+TOTAL
+Algorithm: ids
+Nodes Generated: 14,666
+Time Taken: 0.171129 seconds
+Avg Run Time: 0.008556437492370606 seconds
+Avg Nodes Explored: 733.3
+--------------------------------------
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>> L15 Search <<<<<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+*** BFS L15: ***
+----------------------------------------
+File: 5120.txt
+Problem: EightPuzzle((3, 7, 6, 2, 5, 0, 1, 4, 8),
+Algorithm: bfs
+Nodes Generated: 11,986
+Time Taken: 0.084370 seconds
+Path Length: 15
+Path: LULDDRURULLDDRR
+--------------------------------------
+File: 5108.txt
+Problem: EightPuzzle((1, 2, 6, 3, 7, 0, 4, 8, 5),
+Algorithm: bfs
+Nodes Generated: 10,870
+Time Taken: 0.077043 seconds
+Path Length: 15
+Path: DLULURDRULLDDRR
+--------------------------------------
+File: 4798.txt
+Problem: EightPuzzle((6, 0, 3, 1, 2, 5, 4, 7, 8),
+Algorithm: bfs
+Nodes Generated: 11,200
+Time Taken: 0.085439 seconds
+Path Length: 15
+Path: DRULLDDRUURDLDR
+--------------------------------------
+File: 4773.txt
+Problem: EightPuzzle((5, 1, 2, 6, 8, 0, 4, 3, 7),
+Algorithm: bfs
+Nodes Generated: 13,474
+Time Taken: 0.099872 seconds
+Path Length: 15
+Path: LDRULLURRDLLDRR
+--------------------------------------
+File: 4767.txt
+Problem: EightPuzzle((6, 5, 1, 0, 3, 2, 4, 7, 8),
+Algorithm: bfs
+Nodes Generated: 10,393
+Time Taken: 0.080836 seconds
+Path Length: 15
+Path: URRDLLURRDLLDRR
+--------------------------------------
+File: 5109.txt
+Problem: EightPuzzle((1, 2, 6, 4, 3, 0, 7, 8, 5),
+Algorithm: bfs
+Nodes Generated: 11,184
+Time Taken: 0.080060 seconds
+Path Length: 15
+Path: DLURULDDRULURDD
+--------------------------------------
+File: 5123.txt
+Problem: EightPuzzle((2, 3, 6, 4, 1, 7, 8, 0, 5),
+Algorithm: bfs
+Nodes Generated: 13,033
+Time Taken: 0.101598 seconds
+Path Length: 15
+Path: LURRDLURULLDDRR
+--------------------------------------
+File: 4771.txt
+Problem: EightPuzzle((5, 1, 2, 0, 3, 8, 6, 4, 7),
+Algorithm: bfs
+Nodes Generated: 11,818
+Time Taken: 0.090948 seconds
+Path Length: 15
+Path: DRRULLURRDLLDRR
+--------------------------------------
+File: 5126.txt
+Problem: EightPuzzle((2, 3, 6, 0, 8, 7, 1, 4, 5),
+Algorithm: bfs
+Nodes Generated: 11,320
+Time Taken: 0.085222 seconds
+Path Length: 15
+Path: DRURDLURULLDDRR
+--------------------------------------
+File: 4775.txt
+Problem: EightPuzzle((6, 5, 2, 4, 1, 3, 7, 0, 8),
+Algorithm: bfs
+Nodes Generated: 11,989
+Time Taken: 0.096587 seconds
+Path Length: 15
+Path: LUURDLURRDLLDRR
+--------------------------------------
+File: 5127.txt
+Problem: EightPuzzle((1, 2, 3, 0, 7, 6, 4, 8, 5),
+Algorithm: bfs
+Nodes Generated: 10,066
+Time Taken: 0.075595 seconds
+Path Length: 15
+Path: URRDDLURULLDDRR
+--------------------------------------
+File: 4789.txt
+Problem: EightPuzzle((5, 0, 2, 4, 1, 6, 7, 8, 3),
+Algorithm: bfs
+Nodes Generated: 11,719
+Time Taken: 0.085804 seconds
+Path Length: 15
+Path: DRDLLUURRDLLDRR
+--------------------------------------
+File: 5130.txt
+Problem: EightPuzzle((2, 7, 3, 1, 8, 6, 4, 0, 5),
+Algorithm: bfs
+Nodes Generated: 9,583
+Time Taken: 0.070040 seconds
+Path Length: 15
+Path: UURDDLURULLDDRR
+--------------------------------------
+File: 4800.txt
+Problem: EightPuzzle((6, 2, 3, 1, 5, 8, 4, 0, 7),
+Algorithm: bfs
+Nodes Generated: 13,489
+Time Taken: 0.107614 seconds
+Path Length: 15
+Path: RUULLDDRUURDLDR
+--------------------------------------
+File: 5115.txt
+Problem: EightPuzzle((7, 2, 6, 0, 3, 5, 1, 4, 8),
+Algorithm: bfs
+Nodes Generated: 9,481
+Time Taken: 0.066823 seconds
+Path Length: 15
+Path: URDLDRURULLDDRR
+--------------------------------------
+File: 4784.txt
+Problem: EightPuzzle((5, 1, 2, 0, 6, 7, 4, 8, 3),
+Algorithm: bfs
+Nodes Generated: 9,805
+Time Taken: 0.072404 seconds
+Path Length: 15
+Path: URDRDLUURDLLDRR
+--------------------------------------
+File: 4778.txt
+Problem: EightPuzzle((5, 2, 3, 6, 7, 1, 4, 0, 8),
+Algorithm: bfs
+Nodes Generated: 11,086
+Time Taken: 0.083512 seconds
+Path Length: 15
+Path: URULDLURRDLLDRR
+--------------------------------------
+File: 4793.txt
+Problem: EightPuzzle((5, 0, 1, 4, 3, 2, 7, 6, 8),
+Algorithm: bfs
+Nodes Generated: 13,885
+Time Taken: 0.102061 seconds
+Path Length: 15
+Path: RDLDLUURRDLLDRR
+--------------------------------------
+File: 4768.txt
+Problem: EightPuzzle((5, 3, 1, 0, 6, 2, 4, 7, 8),
+Algorithm: bfs
+Nodes Generated: 12,730
+Time Taken: 0.094631 seconds
+Path Length: 15
+Path: RURDLLURRDLLDRR
+--------------------------------------
+File: 4780.txt
+Problem: EightPuzzle((5, 1, 2, 7, 3, 0, 6, 4, 8),
+Algorithm: bfs
+Nodes Generated: 14,134
+Time Taken: 0.109039 seconds
+Path Length: 15
+Path: LLDRULURRDLLDRR
+--------------------------------------
+TOTAL
+Algorithm: bfs
+Nodes Generated: 233,245
+Time Taken: 1.757279 seconds
+Avg Run Time: 0.08786394596099853 seconds
+Avg Nodes Explored: 11662.25
+--------------------------------------
+
+
+*** A* (h1) L15: ***
+----------------------------------------
+File: 5120.txt
+Problem: EightPuzzle((3, 7, 6, 2, 5, 0, 1, 4, 8),
+Algorithm: h1
+Nodes Generated:   582
+Time Taken: 0.005433 seconds
+Path Length: 15
+Path: LULDDRURULLDDRR
+--------------------------------------
+File: 5108.txt
+Problem: EightPuzzle((1, 2, 6, 3, 7, 0, 4, 8, 5),
+Algorithm: h1
+Nodes Generated: 1,002
+Time Taken: 0.009715 seconds
+Path Length: 15
+Path: DLULURDRULLDDRR
+--------------------------------------
+File: 4798.txt
+Problem: EightPuzzle((6, 0, 3, 1, 2, 5, 4, 7, 8),
+Algorithm: h1
+Nodes Generated:   855
+Time Taken: 0.006209 seconds
+Path Length: 15
+Path: DRULLDDRUURDLDR
+--------------------------------------
+File: 4773.txt
+Problem: EightPuzzle((5, 1, 2, 6, 8, 0, 4, 3, 7),
+Algorithm: h1
+Nodes Generated:   615
+Time Taken: 0.005348 seconds
+Path Length: 15
+Path: LDRULLURRDLLDRR
+--------------------------------------
+File: 4767.txt
+Problem: EightPuzzle((6, 5, 1, 0, 3, 2, 4, 7, 8),
+Algorithm: h1
+Nodes Generated:   650
+Time Taken: 0.005994 seconds
+Path Length: 15
+Path: URRDLLURRDLLDRR
+--------------------------------------
+File: 5109.txt
+Problem: EightPuzzle((1, 2, 6, 4, 3, 0, 7, 8, 5),
+Algorithm: h1
+Nodes Generated: 1,074
+Time Taken: 0.008020 seconds
+Path Length: 15
+Path: DLURULDDRULURDD
+--------------------------------------
+File: 5123.txt
+Problem: EightPuzzle((2, 3, 6, 4, 1, 7, 8, 0, 5),
+Algorithm: h1
+Nodes Generated:   850
+Time Taken: 0.007808 seconds
+Path Length: 15
+Path: LURRDLURULLDDRR
+--------------------------------------
+File: 4771.txt
+Problem: EightPuzzle((5, 1, 2, 0, 3, 8, 6, 4, 7),
+Algorithm: h1
+Nodes Generated:   620
+Time Taken: 0.004691 seconds
+Path Length: 15
+Path: DRRULLURRDLLDRR
+--------------------------------------
+File: 5126.txt
+Problem: EightPuzzle((2, 3, 6, 0, 8, 7, 1, 4, 5),
+Algorithm: h1
+Nodes Generated:   731
+Time Taken: 0.006732 seconds
+Path Length: 15
+Path: DRRULDRUULLDDRR
+--------------------------------------
+File: 4775.txt
+Problem: EightPuzzle((6, 5, 2, 4, 1, 3, 7, 0, 8),
+Algorithm: h1
+Nodes Generated:   751
+Time Taken: 0.005403 seconds
+Path Length: 15
+Path: LURULDDRUURDLDR
+--------------------------------------
+File: 5127.txt
+Problem: EightPuzzle((1, 2, 3, 0, 7, 6, 4, 8, 5),
+Algorithm: h1
+Nodes Generated: 1,160
+Time Taken: 0.010070 seconds
+Path Length: 15
+Path: URRDDLURULLDDRR
+--------------------------------------
+File: 4789.txt
+Problem: EightPuzzle((5, 0, 2, 4, 1, 6, 7, 8, 3),
+Algorithm: h1
+Nodes Generated:   798
+Time Taken: 0.006100 seconds
+Path Length: 15
+Path: DRDLLUURRDLLDRR
+--------------------------------------
+File: 5130.txt
+Problem: EightPuzzle((2, 7, 3, 1, 8, 6, 4, 0, 5),
+Algorithm: h1
+Nodes Generated:   973
+Time Taken: 0.007750 seconds
+Path Length: 15
+Path: UURDDLURULLDDRR
+--------------------------------------
+File: 4800.txt
+Problem: EightPuzzle((6, 2, 3, 1, 5, 8, 4, 0, 7),
+Algorithm: h1
+Nodes Generated:   763
+Time Taken: 0.005887 seconds
+Path Length: 15
+Path: RUULLDDRUURDLDR
+--------------------------------------
+File: 5115.txt
+Problem: EightPuzzle((7, 2, 6, 0, 3, 5, 1, 4, 8),
+Algorithm: h1
+Nodes Generated:   684
+Time Taken: 0.005309 seconds
+Path Length: 15
+Path: URDLDRURULLDDRR
+--------------------------------------
+File: 4784.txt
+Problem: EightPuzzle((5, 1, 2, 0, 6, 7, 4, 8, 3),
+Algorithm: h1
+Nodes Generated:   684
+Time Taken: 0.006137 seconds
+Path Length: 15
+Path: URDRDLUURDLLDRR
+--------------------------------------
+File: 4778.txt
+Problem: EightPuzzle((5, 2, 3, 6, 7, 1, 4, 0, 8),
+Algorithm: h1
+Nodes Generated:   738
+Time Taken: 0.006410 seconds
+Path Length: 15
+Path: URULDLURRDLLDRR
+--------------------------------------
+File: 4793.txt
+Problem: EightPuzzle((5, 0, 1, 4, 3, 2, 7, 6, 8),
+Algorithm: h1
+Nodes Generated:   768
+Time Taken: 0.005708 seconds
+Path Length: 15
+Path: RDLDLUURRDLLDRR
+--------------------------------------
+File: 4768.txt
+Problem: EightPuzzle((5, 3, 1, 0, 6, 2, 4, 7, 8),
+Algorithm: h1
+Nodes Generated:   717
+Time Taken: 0.007337 seconds
+Path Length: 15
+Path: RURDLLURRDLLDRR
+--------------------------------------
+File: 4780.txt
+Problem: EightPuzzle((5, 1, 2, 7, 3, 0, 6, 4, 8),
+Algorithm: h1
+Nodes Generated:   718
+Time Taken: 0.005489 seconds
+Path Length: 15
+Path: LLDRULURRDLLDRR
+--------------------------------------
+TOTAL
+Algorithm: h1
+Nodes Generated: 15,733
+Time Taken: 0.138766 seconds
+Avg Run Time: 0.006938314437866211 seconds
+Avg Nodes Explored: 786.65
+--------------------------------------
+
+
+*** A* (h2) L15: ***
+----------------------------------------
+File: 5120.txt
+Problem: EightPuzzle((3, 7, 6, 2, 5, 0, 1, 4, 8),
+Algorithm: h2
+Nodes Generated:   755
+Time Taken: 0.006931 seconds
+Path Length: 15
+Path: LULDDRURULLDDRR
+--------------------------------------
+File: 5108.txt
+Problem: EightPuzzle((1, 2, 6, 3, 7, 0, 4, 8, 5),
+Algorithm: h2
+Nodes Generated:   941
+Time Taken: 0.009054 seconds
+Path Length: 17
+Path: DLURULDLDRRULURDD
+--------------------------------------
+File: 4798.txt
+Problem: EightPuzzle((6, 0, 3, 1, 2, 5, 4, 7, 8),
+Algorithm: h2
+Nodes Generated: 1,075
+Time Taken: 0.010286 seconds
+Path Length: 17
+Path: LDRURDLLDRRUULDRD
+--------------------------------------
+File: 4773.txt
+Problem: EightPuzzle((5, 1, 2, 6, 8, 0, 4, 3, 7),
+Algorithm: h2
+Nodes Generated: 1,166
+Time Taken: 0.009703 seconds
+Path Length: 15
+Path: LDRULLURRDLLDRR
+--------------------------------------
+File: 4767.txt
+Problem: EightPuzzle((6, 5, 1, 0, 3, 2, 4, 7, 8),
+Algorithm: h2
+Nodes Generated:   588
+Time Taken: 0.005856 seconds
+Path Length: 15
+Path: URRDLLURRDLLDRR
+--------------------------------------
+File: 5109.txt
+Problem: EightPuzzle((1, 2, 6, 4, 3, 0, 7, 8, 5),
+Algorithm: h2
+Nodes Generated:   681
+Time Taken: 0.005881 seconds
+Path Length: 15
+Path: DLURULDDRULURDD
+--------------------------------------
+File: 5123.txt
+Problem: EightPuzzle((2, 3, 6, 4, 1, 7, 8, 0, 5),
+Algorithm: h2
+Nodes Generated: 2,276
+Time Taken: 0.021327 seconds
+Path Length: 17
+Path: LURDRULDRUULLDDRR
+--------------------------------------
+File: 4771.txt
+Problem: EightPuzzle((5, 1, 2, 0, 3, 8, 6, 4, 7),
+Algorithm: h2
+Nodes Generated: 1,333
+Time Taken: 0.011554 seconds
+Path Length: 15
+Path: DRRULLURRDLLDRR
+--------------------------------------
+File: 5126.txt
+Problem: EightPuzzle((2, 3, 6, 0, 8, 7, 1, 4, 5),
+Algorithm: h2
+Nodes Generated:   614
+Time Taken: 0.005217 seconds
+Path Length: 15
+Path: DRRULDRUULLDDRR
+--------------------------------------
+File: 4775.txt
+Problem: EightPuzzle((6, 5, 2, 4, 1, 3, 7, 0, 8),
+Algorithm: h2
+Nodes Generated:   934
+Time Taken: 0.009445 seconds
+Path Length: 15
+Path: LURULDDRUURDLDR
+--------------------------------------
+File: 5127.txt
+Problem: EightPuzzle((1, 2, 3, 0, 7, 6, 4, 8, 5),
+Algorithm: h2
+Nodes Generated: 1,015
+Time Taken: 0.008631 seconds
+Path Length: 17
+Path: DRRULDLURRDLULDRR
+--------------------------------------
+File: 4789.txt
+Problem: EightPuzzle((5, 0, 2, 4, 1, 6, 7, 8, 3),
+Algorithm: h2
+Nodes Generated: 3,250
+Time Taken: 0.030508 seconds
+Path Length: 15
+Path: DRDLLUURRDLLDRR
+--------------------------------------
+File: 5130.txt
+Problem: EightPuzzle((2, 7, 3, 1, 8, 6, 4, 0, 5),
+Algorithm: h2
+Nodes Generated: 2,379
+Time Taken: 0.023220 seconds
+Path Length: 15
+Path: UURDDLURULLDDRR
+--------------------------------------
+File: 4800.txt
+Problem: EightPuzzle((6, 2, 3, 1, 5, 8, 4, 0, 7),
+Algorithm: h2
+Nodes Generated: 1,108
+Time Taken: 0.009991 seconds
+Path Length: 15
+Path: RUULLDDRUURDLDR
+--------------------------------------
+File: 5115.txt
+Problem: EightPuzzle((7, 2, 6, 0, 3, 5, 1, 4, 8),
+Algorithm: h2
+Nodes Generated:   437
+Time Taken: 0.005027 seconds
+Path Length: 17
+Path: URDRULDLDRUULDDRR
+--------------------------------------
+File: 4784.txt
+Problem: EightPuzzle((5, 1, 2, 0, 6, 7, 4, 8, 3),
+Algorithm: h2
+Nodes Generated: 1,169
+Time Taken: 0.009755 seconds
+Path Length: 19
+Path: DRURDLLUURRDDLULDRR
+--------------------------------------
+File: 4778.txt
+Problem: EightPuzzle((5, 2, 3, 6, 7, 1, 4, 0, 8),
+Algorithm: h2
+Nodes Generated: 2,352
+Time Taken: 0.024992 seconds
+Path Length: 15
+Path: URULDLURRDLLDRR
+--------------------------------------
+File: 4793.txt
+Problem: EightPuzzle((5, 0, 1, 4, 3, 2, 7, 6, 8),
+Algorithm: h2
+Nodes Generated: 2,736
+Time Taken: 0.029343 seconds
+Path Length: 15
+Path: RDLDLUURRDLLDRR
+--------------------------------------
+File: 4768.txt
+Problem: EightPuzzle((5, 3, 1, 0, 6, 2, 4, 7, 8),
+Algorithm: h2
+Nodes Generated:   702
+Time Taken: 0.007145 seconds
+Path Length: 19
+Path: URRDLLURDLDRRULURDD
+--------------------------------------
+File: 4780.txt
+Problem: EightPuzzle((5, 1, 2, 7, 3, 0, 6, 4, 8),
+Algorithm: h2
+Nodes Generated: 1,928
+Time Taken: 0.020490 seconds
+Path Length: 15
+Path: LLDRULURRDLLDRR
+--------------------------------------
+TOTAL
+Algorithm: h2
+Nodes Generated: 27,439
+Time Taken: 0.270988 seconds
+Avg Run Time: 0.013549399375915528 seconds
+Avg Nodes Explored: 1371.95
+--------------------------------------
+
+
+*** A* (h3) L15: ***
+----------------------------------------
+File: 5120.txt
+Problem: EightPuzzle((3, 7, 6, 2, 5, 0, 1, 4, 8),
+Algorithm: h3
+Nodes Generated: 13,290
+Time Taken: 0.123872 seconds
+Path Length: 15
+Path: LULDDRURULLDDRR
+--------------------------------------
+File: 5108.txt
+Problem: EightPuzzle((1, 2, 6, 3, 7, 0, 4, 8, 5),
+Algorithm: h3
+Nodes Generated: 11,831
+Time Taken: 0.113668 seconds
+Path Length: 17
+Path: DLURULDLDRRULURDD
+--------------------------------------
+File: 4798.txt
+Problem: EightPuzzle((6, 0, 3, 1, 2, 5, 4, 7, 8),
+Algorithm: h3
+Nodes Generated: 12,037
+Time Taken: 0.135794 seconds
+Path Length: 17
+Path: LDRURDLLDRRUULDRD
+--------------------------------------
+File: 4773.txt
+Problem: EightPuzzle((5, 1, 2, 6, 8, 0, 4, 3, 7),
+Algorithm: h3
+Nodes Generated: 16,608
+Time Taken: 0.190207 seconds
+Path Length: 15
+Path: LDRULLURRDLLDRR
+--------------------------------------
+File: 4767.txt
+Problem: EightPuzzle((6, 5, 1, 0, 3, 2, 4, 7, 8),
+Algorithm: h3
+Nodes Generated: 18,587
+Time Taken: 0.190256 seconds
+Path Length: 15
+Path: URRDLLURRDLLDRR
+--------------------------------------
+File: 5109.txt
+Problem: EightPuzzle((1, 2, 6, 4, 3, 0, 7, 8, 5),
+Algorithm: h3
+Nodes Generated: 5,779
+Time Taken: 0.060277 seconds
+Path Length: 15
+Path: DLURULDDRULURDD
+--------------------------------------
+File: 5123.txt
+Problem: EightPuzzle((2, 3, 6, 4, 1, 7, 8, 0, 5),
+Algorithm: h3
+Nodes Generated: 18,870
+Time Taken: 0.204943 seconds
+Path Length: 15
+Path: LURRDLURULLDDRR
+--------------------------------------
+File: 4771.txt
+Problem: EightPuzzle((5, 1, 2, 0, 3, 8, 6, 4, 7),
+Algorithm: h3
+Nodes Generated: 18,085
+Time Taken: 0.204961 seconds
+Path Length: 15
+Path: DRRULLURRDLLDRR
+--------------------------------------
+File: 5126.txt
+Problem: EightPuzzle((2, 3, 6, 0, 8, 7, 1, 4, 5),
+Algorithm: h3
+Nodes Generated: 14,983
+Time Taken: 0.175114 seconds
+Path Length: 15
+Path: DRRULDRUULLDDRR
+--------------------------------------
+File: 4775.txt
+Problem: EightPuzzle((6, 5, 2, 4, 1, 3, 7, 0, 8),
+Algorithm: h3
+Nodes Generated: 18,908
+Time Taken: 0.209164 seconds
+Path Length: 15
+Path: LURULDDRUURDLDR
+--------------------------------------
+File: 5127.txt
+Problem: EightPuzzle((1, 2, 3, 0, 7, 6, 4, 8, 5),
+Algorithm: h3
+Nodes Generated: 12,946
+Time Taken: 0.137951 seconds
+Path Length: 17
+Path: DRRUULLDRDLUURRDD
+--------------------------------------
+File: 4789.txt
+Problem: EightPuzzle((5, 0, 2, 4, 1, 6, 7, 8, 3),
+Algorithm: h3
+Nodes Generated: 19,282
+Time Taken: 0.203458 seconds
+Path Length: 15
+Path: DRDLLUURRDLLDRR
+--------------------------------------
+File: 5130.txt
+Problem: EightPuzzle((2, 7, 3, 1, 8, 6, 4, 0, 5),
+Algorithm: h3
+Nodes Generated: 15,959
+Time Taken: 0.169682 seconds
+Path Length: 15
+Path: UURDDLURULLDDRR
+--------------------------------------
+File: 4800.txt
+Problem: EightPuzzle((6, 2, 3, 1, 5, 8, 4, 0, 7),
+Algorithm: h3
+Nodes Generated: 15,717
+Time Taken: 0.188631 seconds
+Path Length: 15
+Path: RUULLDDRUURDLDR
+--------------------------------------
+File: 5115.txt
+Problem: EightPuzzle((7, 2, 6, 0, 3, 5, 1, 4, 8),
+Algorithm: h3
+Nodes Generated: 14,273
+Time Taken: 0.188985 seconds
+Path Length: 15
+Path: URDLDRURULLDDRR
+--------------------------------------
+File: 4784.txt
+Problem: EightPuzzle((5, 1, 2, 0, 6, 7, 4, 8, 3),
+Algorithm: h3
+Nodes Generated: 17,780
+Time Taken: 0.222241 seconds
+Path Length: 15
+Path: RRDLULURRDLLDRR
+--------------------------------------
+File: 4778.txt
+Problem: EightPuzzle((5, 2, 3, 6, 7, 1, 4, 0, 8),
+Algorithm: h3
+Nodes Generated: 18,931
+Time Taken: 0.217634 seconds
+Path Length: 15
+Path: URULDLURRDLLDRR
+--------------------------------------
+File: 4793.txt
+Problem: EightPuzzle((5, 0, 1, 4, 3, 2, 7, 6, 8),
+Algorithm: h3
+Nodes Generated: 20,591
+Time Taken: 0.216584 seconds
+Path Length: 15
+Path: RDLDLUURRDLLDRR
+--------------------------------------
+File: 4768.txt
+Problem: EightPuzzle((5, 3, 1, 0, 6, 2, 4, 7, 8),
+Algorithm: h3
+Nodes Generated: 19,171
+Time Taken: 0.203297 seconds
+Path Length: 15
+Path: RURDLLURRDLLDRR
+--------------------------------------
+File: 4780.txt
+Problem: EightPuzzle((5, 1, 2, 7, 3, 0, 6, 4, 8),
+Algorithm: h3
+Nodes Generated: 19,416
+Time Taken: 0.198767 seconds
+Path Length: 15
+Path: LLDRULURRDLLDRR
+--------------------------------------
+TOTAL
+Algorithm: h3
+Nodes Generated: 323,044
+Time Taken: 3.563112 seconds
+Avg Run Time: 0.17815561294555665 seconds
+Avg Nodes Explored: 16152.2
+--------------------------------------
+
+
+
+*** IDS L15: ***
+----------------------------------------
+File: 5120.txt
+Problem: EightPuzzle((3, 7, 6, 2, 5, 0, 1, 4, 8),
+Algorithm: ids
+Nodes Generated: 44,933
+Time Taken: 0.440817 seconds
+Path Length: 15
+Path: LULDDRURULLDDRR
+--------------------------------------
+File: 5108.txt
+Problem: EightPuzzle((1, 2, 6, 3, 7, 0, 4, 8, 5),
+Algorithm: ids
+Nodes Generated: 49,664
+Time Taken: 0.512321 seconds
+Path Length: 15
+Path: DLULURDRULLDDRR
+--------------------------------------
+File: 4798.txt
+Problem: EightPuzzle((6, 0, 3, 1, 2, 5, 4, 7, 8),
+Algorithm: ids
+Nodes Generated: 47,562
+Time Taken: 0.477352 seconds
+Path Length: 15
+Path: DRULLDRURDLLDRR
+--------------------------------------
+File: 4773.txt
+Problem: EightPuzzle((5, 1, 2, 6, 8, 0, 4, 3, 7),
+Algorithm: ids
+Nodes Generated: 37,388
+Time Taken: 0.382130 seconds
+Path Length: 15
+Path: LDRULLURRDLLDRR
+--------------------------------------
+File: 4767.txt
+Problem: EightPuzzle((6, 5, 1, 0, 3, 2, 4, 7, 8),
+Algorithm: ids
+Nodes Generated: 51,608
+Time Taken: 0.477631 seconds
+Path Length: 15
+Path: URRDLLURRDLLDRR
+--------------------------------------
+File: 5109.txt
+Problem: EightPuzzle((1, 2, 6, 4, 3, 0, 7, 8, 5),
+Algorithm: ids
+Nodes Generated: 46,986
+Time Taken: 0.437891 seconds
+Path Length: 15
+Path: DLLUURDRULLDDRR
+--------------------------------------
+File: 5123.txt
+Problem: EightPuzzle((2, 3, 6, 4, 1, 7, 8, 0, 5),
+Algorithm: ids
+Nodes Generated: 39,467
+Time Taken: 0.388671 seconds
+Path Length: 15
+Path: LURRDLURULLDDRR
+--------------------------------------
+File: 4771.txt
+Problem: EightPuzzle((5, 1, 2, 0, 3, 8, 6, 4, 7),
+Algorithm: ids
+Nodes Generated: 45,532
+Time Taken: 0.456402 seconds
+Path Length: 15
+Path: DRRULLURRDLLDRR
+--------------------------------------
+File: 5126.txt
+Problem: EightPuzzle((2, 3, 6, 0, 8, 7, 1, 4, 5),
+Algorithm: ids
+Nodes Generated: 45,921
+Time Taken: 0.447526 seconds
+Path Length: 15
+Path: DRRULDRUULLDDRR
+--------------------------------------
+File: 4775.txt
+Problem: EightPuzzle((6, 5, 2, 4, 1, 3, 7, 0, 8),
+Algorithm: ids
+Nodes Generated: 42,796
+Time Taken: 0.409263 seconds
+Path Length: 15
+Path: LURULDRURDLLDRR
+--------------------------------------
+File: 5127.txt
+Problem: EightPuzzle((1, 2, 3, 0, 7, 6, 4, 8, 5),
+Algorithm: ids
+Nodes Generated: 53,062
+Time Taken: 0.501563 seconds
+Path Length: 15
+Path: URRDDLURULLDDRR
+--------------------------------------
+File: 4789.txt
+Problem: EightPuzzle((5, 0, 2, 4, 1, 6, 7, 8, 3),
+Algorithm: ids
+Nodes Generated: 45,671
+Time Taken: 0.430554 seconds
+Path Length: 15
+Path: DRDLLUURRDLLDRR
+--------------------------------------
+File: 5130.txt
+Problem: EightPuzzle((2, 7, 3, 1, 8, 6, 4, 0, 5),
+Algorithm: ids
+Nodes Generated: 55,047
+Time Taken: 0.521511 seconds
+Path Length: 15
+Path: UURDDLURULLDDRR
+--------------------------------------
+File: 4800.txt
+Problem: EightPuzzle((6, 2, 3, 1, 5, 8, 4, 0, 7),
+Algorithm: ids
+Nodes Generated: 37,393
+Time Taken: 0.353254 seconds
+Path Length: 15
+Path: RUULLDRURDLLDRR
+--------------------------------------
+File: 5115.txt
+Problem: EightPuzzle((7, 2, 6, 0, 3, 5, 1, 4, 8),
+Algorithm: ids
+Nodes Generated: 55,082
+Time Taken: 0.519107 seconds
+Path Length: 15
+Path: URDLDRURULLDDRR
+--------------------------------------
+File: 4784.txt
+Problem: EightPuzzle((5, 1, 2, 0, 6, 7, 4, 8, 3),
+Algorithm: ids
+Nodes Generated: 34,424
+Time Taken: 0.311984 seconds
+Path Length: 15
+Path: RRDLULURRDLLDRR
+--------------------------------------
+File: 4778.txt
+Problem: EightPuzzle((5, 2, 3, 6, 7, 1, 4, 0, 8),
+Algorithm: ids
+Nodes Generated: 48,606
+Time Taken: 0.460274 seconds
+Path Length: 15
+Path: URULDLURRDLLDRR
+--------------------------------------
+File: 4793.txt
+Problem: EightPuzzle((5, 0, 1, 4, 3, 2, 7, 6, 8),
+Algorithm: ids
+Nodes Generated: 35,532
+Time Taken: 0.334546 seconds
+Path Length: 15
+Path: RDLDLUURRDLLDRR
+--------------------------------------
+File: 4768.txt
+Problem: EightPuzzle((5, 3, 1, 0, 6, 2, 4, 7, 8),
+Algorithm: ids
+Nodes Generated: 41,459
+Time Taken: 0.378738 seconds
+Path Length: 15
+Path: RURDLLURRDLLDRR
+--------------------------------------
+File: 4780.txt
+Problem: EightPuzzle((5, 1, 2, 7, 3, 0, 6, 4, 8),
+Algorithm: ids
+Nodes Generated: 34,424
+Time Taken: 0.323285 seconds
+Path Length: 15
+Path: LLDRULURRDLLDRR
+--------------------------------------
+TOTAL
+Algorithm: ids
+Nodes Generated: 892,557
+Time Taken: 8.571407 seconds
+Avg Run Time: 0.4285703420639038 seconds
+Avg Nodes Explored: 44627.85
+--------------------------------------
+
+
+>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>> L24 Search <<<<<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+*** BFS L24: ***
+----------------------------------------
+File: 131449.txt
+Problem: EightPuzzle((3, 6, 4, 8, 1, 5, 7, 2, 0),
+Algorithm: bfs
+Nodes Generated: 270,612
+Time Taken: 2.252523 seconds
+Path Length: 24
+Path: UULLDRRULLDRURDLDRUULDDR
+--------------------------------------
+File: 131271.txt
+Problem: EightPuzzle((3, 8, 7, 1, 0, 5, 2, 6, 4),
+Algorithm: bfs
+Nodes Generated: 297,057
+Time Taken: 2.464761 seconds
+Path Length: 24
+Path: URDDLUULDRRDLLURDRUULDRD
+--------------------------------------
+File: 131311.txt
+Problem: EightPuzzle((2, 7, 6, 8, 0, 5, 3, 1, 4),
+Algorithm: bfs
+Nodes Generated: 311,448
+Time Taken: 2.799466 seconds
+Path Length: 24
+Path: DLURULDRRULDDRULDLURURDD
+--------------------------------------
+File: 131304.txt
+Problem: EightPuzzle((7, 3, 0, 8, 6, 2, 1, 4, 5),
+Algorithm: bfs
+Nodes Generated: 289,131
+Time Taken: 2.555096 seconds
+Path Length: 24
+Path: DLLURRDLLDRUULDDRRUULDDR
+--------------------------------------
+File: 131264.txt
+Problem: EightPuzzle((6, 8, 0, 1, 4, 5, 3, 2, 7),
+Algorithm: bfs
+Nodes Generated: 309,984
+Time Taken: 2.605113 seconds
+Path Length: 24
+Path: LLDDRULDRRUULDLDRRUULDDR
+--------------------------------------
+File: 131274.txt
+Problem: EightPuzzle((6, 8, 0, 3, 7, 5, 1, 2, 4),
+Algorithm: bfs
+Nodes Generated: 311,124
+Time Taken: 2.581707 seconds
+Path Length: 24
+Path: LLDDRRUULLDDRULDRRUULDDR
+--------------------------------------
+File: 131248.txt
+Problem: EightPuzzle((1, 6, 0, 2, 5, 7, 3, 4, 8),
+Algorithm: bfs
+Nodes Generated: 301,685
+Time Taken: 2.541838 seconds
+Path Length: 24
+Path: LDLURDRULLDDRULDRRULURDD
+--------------------------------------
+File: 131370.txt
+Problem: EightPuzzle((7, 6, 4, 3, 0, 8, 2, 1, 5),
+Algorithm: bfs
+Nodes Generated: 317,155
+Time Taken: 2.944094 seconds
+Path Length: 24
+Path: DRUULDLURDRDLLURDRUULDDR
+--------------------------------------
+File: 131400.txt
+Problem: EightPuzzle((0, 6, 5, 1, 7, 4, 2, 3, 8),
+Algorithm: bfs
+Nodes Generated: 283,185
+Time Taken: 2.329726 seconds
+Path Length: 24
+Path: DRDRUULDDRULDLURDRUULDDR
+--------------------------------------
+File: 131374.txt
+Problem: EightPuzzle((6, 4, 0, 1, 7, 8, 2, 3, 5),
+Algorithm: bfs
+Nodes Generated: 313,440
+Time Taken: 2.579103 seconds
+Path Length: 24
+Path: LLDRDRUULDRDLLURDRUULDDR
+--------------------------------------
+File: 131406.txt
+Problem: EightPuzzle((0, 8, 1, 7, 4, 6, 3, 2, 5),
+Algorithm: bfs
+Nodes Generated: 259,155
+Time Taken: 2.130901 seconds
+Path Length: 24
+Path: DDRUURDLLURDDLURDRUULDDR
+--------------------------------------
+File: 131378.txt
+Problem: EightPuzzle((1, 4, 8, 7, 6, 5, 2, 3, 0),
+Algorithm: bfs
+Nodes Generated: 258,063
+Time Taken: 2.179656 seconds
+Path Length: 24
+Path: UULDDRUULDRDLLURDRUULDDR
+--------------------------------------
+File: 131345.txt
+Problem: EightPuzzle((0, 4, 8, 6, 7, 5, 3, 1, 2),
+Algorithm: bfs
+Nodes Generated: 255,768
+Time Taken: 2.069056 seconds
+Path Length: 24
+Path: DDRUULDDRRUULLDRDRUULDDR
+--------------------------------------
+File: 131425.txt
+Problem: EightPuzzle((7, 6, 8, 2, 1, 5, 0, 4, 3),
+Algorithm: bfs
+Nodes Generated: 308,883
+Time Taken: 2.605171 seconds
+Path Length: 24
+Path: RRUULDDLUURDDLURDRUULDDR
+--------------------------------------
+File: 131394.txt
+Problem: EightPuzzle((1, 6, 5, 2, 3, 4, 8, 7, 0),
+Algorithm: bfs
+Nodes Generated: 256,545
+Time Taken: 2.145536 seconds
+Path Length: 24
+Path: UULDDLURDRULDLURDRUULDDR
+--------------------------------------
+File: 131455.txt
+Problem: EightPuzzle((3, 6, 0, 8, 1, 5, 7, 4, 2),
+Algorithm: bfs
+Nodes Generated: 313,500
+Time Taken: 2.487802 seconds
+Path Length: 24
+Path: LLDRDRUULLDRURDLDRUULDDR
+--------------------------------------
+File: 131324.txt
+Problem: EightPuzzle((6, 8, 4, 3, 5, 2, 7, 1, 0),
+Algorithm: bfs
+Nodes Generated: 284,568
+Time Taken: 2.264119 seconds
+Path Length: 24
+Path: ULDRUULLDRRULLDRDRUULDDR
+--------------------------------------
+File: 131279.txt
+Problem: EightPuzzle((0, 3, 6, 8, 7, 5, 1, 2, 4),
+Algorithm: bfs
+Nodes Generated: 303,315
+Time Taken: 2.400599 seconds
+Path Length: 24
+Path: RDLDRRULULDDRULDRRUULDDR
+--------------------------------------
+File: 131286.txt
+Problem: EightPuzzle((2, 1, 7, 4, 6, 8, 0, 3, 5),
+Algorithm: bfs
+Nodes Generated: 258,285
+Time Taken: 2.064185 seconds
+Path Length: 24
+Path: UURDDRUULDRDLULDRRUULDDR
+--------------------------------------
+File: 131256.txt
+Problem: EightPuzzle((6, 7, 0, 1, 4, 8, 2, 5, 3),
+Algorithm: bfs
+Nodes Generated: 255,501
+Time Taken: 2.156761 seconds
+Path Length: 24
+Path: DDLUULDDRURULDLDRRUULDDR
+--------------------------------------
+TOTAL
+Algorithm: bfs
+Nodes Generated: 5,758,404
+Time Taken: 48.165352 seconds
+Avg Run Time: 2.408267593383789 seconds
+Avg Nodes Explored: 287920.2
+--------------------------------------
+
+
+*** A* (h1) L24: ***
+----------------------------------------
+File: 131449.txt
+Problem: EightPuzzle((3, 6, 4, 8, 1, 5, 7, 2, 0),
+Algorithm: h1
+Nodes Generated: 36,200
+Time Taken: 0.380434 seconds
+Path Length: 24
+Path: UULLDRRULLDRURDLDRUULDDR
+--------------------------------------
+File: 131271.txt
+Problem: EightPuzzle((3, 8, 7, 1, 0, 5, 2, 6, 4),
+Algorithm: h1
+Nodes Generated: 40,952
+Time Taken: 0.493659 seconds
+Path Length: 24
+Path: URDDLUULDRRDLLURDRUULDRD
+--------------------------------------
+File: 131311.txt
+Problem: EightPuzzle((2, 7, 6, 8, 0, 5, 3, 1, 4),
+Algorithm: h1
+Nodes Generated: 42,382
+Time Taken: 0.459840 seconds
+Path Length: 24
+Path: LDRRULULDDRUULDDRRUULDDR
+--------------------------------------
+File: 131304.txt
+Problem: EightPuzzle((7, 3, 0, 8, 6, 2, 1, 4, 5),
+Algorithm: h1
+Nodes Generated: 36,756
+Time Taken: 0.419949 seconds
+Path Length: 24
+Path: LLDDRULURDRDLLUURDDLURRD
+--------------------------------------
+File: 131264.txt
+Problem: EightPuzzle((6, 8, 0, 1, 4, 5, 3, 2, 7),
+Algorithm: h1
+Nodes Generated: 33,100
+Time Taken: 0.331339 seconds
+Path Length: 24
+Path: LLDRDLURDRUULDLDRRUULDDR
+--------------------------------------
+File: 131274.txt
+Problem: EightPuzzle((6, 8, 0, 3, 7, 5, 1, 2, 4),
+Algorithm: h1
+Nodes Generated: 32,319
+Time Taken: 0.348220 seconds
+Path Length: 24
+Path: LLDDRRUULLDRDLURDRUULDDR
+--------------------------------------
+File: 131248.txt
+Problem: EightPuzzle((1, 6, 0, 2, 5, 7, 3, 4, 8),
+Algorithm: h1
+Nodes Generated: 35,823
+Time Taken: 0.355474 seconds
+Path Length: 24
+Path: LDRULLDDRULURDLDRRUULDRD
+--------------------------------------
+File: 131370.txt
+Problem: EightPuzzle((7, 6, 4, 3, 0, 8, 2, 1, 5),
+Algorithm: h1
+Nodes Generated: 41,736
+Time Taken: 0.407074 seconds
+Path Length: 24
+Path: DRUULDLURDRDLLURDRUULDDR
+--------------------------------------
+File: 131400.txt
+Problem: EightPuzzle((0, 6, 5, 1, 7, 4, 2, 3, 8),
+Algorithm: h1
+Nodes Generated: 36,118
+Time Taken: 0.337379 seconds
+Path Length: 24
+Path: DRDRUULDDRULDLURDRUULDDR
+--------------------------------------
+File: 131374.txt
+Problem: EightPuzzle((6, 4, 0, 1, 7, 8, 2, 3, 5),
+Algorithm: h1
+Nodes Generated: 34,271
+Time Taken: 0.346099 seconds
+Path Length: 24
+Path: LLDRDRUULDRDLLURDRUULDDR
+--------------------------------------
+File: 131406.txt
+Problem: EightPuzzle((0, 8, 1, 7, 4, 6, 3, 2, 5),
+Algorithm: h1
+Nodes Generated: 33,790
+Time Taken: 0.363207 seconds
+Path Length: 24
+Path: DDRUURDLLURDDLURDRUULDDR
+--------------------------------------
+File: 131378.txt
+Problem: EightPuzzle((1, 4, 8, 7, 6, 5, 2, 3, 0),
+Algorithm: h1
+Nodes Generated: 36,747
+Time Taken: 0.423535 seconds
+Path Length: 24
+Path: UULDDRUULDRDLLURDRUULDDR
+--------------------------------------
+File: 131345.txt
+Problem: EightPuzzle((0, 4, 8, 6, 7, 5, 3, 1, 2),
+Algorithm: h1
+Nodes Generated: 32,064
+Time Taken: 0.346832 seconds
+Path Length: 24
+Path: DRDLURULDRDRUULDDRUULDDR
+--------------------------------------
+File: 131425.txt
+Problem: EightPuzzle((7, 6, 8, 2, 1, 5, 0, 4, 3),
+Algorithm: h1
+Nodes Generated: 34,877
+Time Taken: 0.388710 seconds
+Path Length: 24
+Path: RRUULDDLUURDDLURDRUULDDR
+--------------------------------------
+File: 131394.txt
+Problem: EightPuzzle((1, 6, 5, 2, 3, 4, 8, 7, 0),
+Algorithm: h1
+Nodes Generated: 38,362
+Time Taken: 0.405906 seconds
+Path Length: 24
+Path: UULDDLURDRULDLURDRUULDDR
+--------------------------------------
+File: 131455.txt
+Problem: EightPuzzle((3, 6, 0, 8, 1, 5, 7, 4, 2),
+Algorithm: h1
+Nodes Generated: 37,505
+Time Taken: 0.420642 seconds
+Path Length: 24
+Path: LLDRDRUULLDRURDLDRUULDDR
+--------------------------------------
+File: 131324.txt
+Problem: EightPuzzle((6, 8, 4, 3, 5, 2, 7, 1, 0),
+Algorithm: h1
+Nodes Generated: 32,717
+Time Taken: 0.367058 seconds
+Path Length: 24
+Path: ULDRUULLDRRULLDRDRUULDDR
+--------------------------------------
+File: 131279.txt
+Problem: EightPuzzle((0, 3, 6, 8, 7, 5, 1, 2, 4),
+Algorithm: h1
+Nodes Generated: 35,210
+Time Taken: 0.341819 seconds
+Path Length: 24
+Path: RDLDRRULULDRDLURDRUULDDR
+--------------------------------------
+File: 131286.txt
+Problem: EightPuzzle((2, 1, 7, 4, 6, 8, 0, 3, 5),
+Algorithm: h1
+Nodes Generated: 35,378
+Time Taken: 0.332172 seconds
+Path Length: 24
+Path: UURDDRUULDRDLULDRRUULDDR
+--------------------------------------
+File: 131256.txt
+Problem: EightPuzzle((6, 7, 0, 1, 4, 8, 2, 5, 3),
+Algorithm: h1
+Nodes Generated: 34,132
+Time Taken: 0.319774 seconds
+Path Length: 24
+Path: DLULDRRDLLURRULDDRUULDDR
+--------------------------------------
+TOTAL
+Algorithm: h1
+Nodes Generated: 720,439
+Time Taken: 7.596319 seconds
+Avg Run Time: 0.379815948009491 seconds
+Avg Nodes Explored: 36021.95
+--------------------------------------
+
+
+
+*** A* (h2) L24: ***
+----------------------------------------
+File: 131449.txt
+Problem: EightPuzzle((3, 6, 4, 8, 1, 5, 7, 2, 0),
+Algorithm: h2
+Nodes Generated: 20,119
+Time Taken: 0.204757 seconds
+Path Length: 24
+Path: UULLDRRULLDRURDLDRUULDDR
+--------------------------------------
+File: 131271.txt
+Problem: EightPuzzle((3, 8, 7, 1, 0, 5, 2, 6, 4),
+Algorithm: h2
+Nodes Generated: 19,182
+Time Taken: 0.205880 seconds
+Path Length: 26
+Path: LDRRUULLDRRULLDRDLURRDLURD
+--------------------------------------
+File: 131311.txt
+Problem: EightPuzzle((2, 7, 6, 8, 0, 5, 3, 1, 4),
+Algorithm: h2
+Nodes Generated: 11,494
+Time Taken: 0.123439 seconds
+Path Length: 24
+Path: DLURULDRRULDDRULDLURURDD
+--------------------------------------
+File: 131304.txt
+Problem: EightPuzzle((7, 3, 0, 8, 6, 2, 1, 4, 5),
+Algorithm: h2
+Nodes Generated: 14,079
+Time Taken: 0.155173 seconds
+Path Length: 24
+Path: LLDDRULURDRDLLUURDDLURRD
+--------------------------------------
+File: 131264.txt
+Problem: EightPuzzle((6, 8, 0, 1, 4, 5, 3, 2, 7),
+Algorithm: h2
+Nodes Generated: 12,990
+Time Taken: 0.145846 seconds
+Path Length: 24
+Path: LLDRDLURDRUULDLDRRUULDDR
+--------------------------------------
+File: 131274.txt
+Problem: EightPuzzle((6, 8, 0, 3, 7, 5, 1, 2, 4),
+Algorithm: h2
+Nodes Generated: 8,929
+Time Taken: 0.104846 seconds
+Path Length: 24
+Path: LLDDRRUULLDDRULDRRUULDDR
+--------------------------------------
+File: 131248.txt
+Problem: EightPuzzle((1, 6, 0, 2, 5, 7, 3, 4, 8),
+Algorithm: h2
+Nodes Generated: 9,245
+Time Taken: 0.103291 seconds
+Path Length: 24
+Path: LDLURDRULLDDRULDRRULURDD
+--------------------------------------
+File: 131370.txt
+Problem: EightPuzzle((7, 6, 4, 3, 0, 8, 2, 1, 5),
+Algorithm: h2
+Nodes Generated: 17,950
+Time Taken: 0.196271 seconds
+Path Length: 24
+Path: DRUULDLURDRDLLURDRUULDDR
+--------------------------------------
+File: 131400.txt
+Problem: EightPuzzle((0, 6, 5, 1, 7, 4, 2, 3, 8),
+Algorithm: h2
+Nodes Generated: 19,821
+Time Taken: 0.211530 seconds
+Path Length: 24
+Path: DRDRUULDDRULDLURDRUULDDR
+--------------------------------------
+File: 131374.txt
+Problem: EightPuzzle((6, 4, 0, 1, 7, 8, 2, 3, 5),
+Algorithm: h2
+Nodes Generated: 15,962
+Time Taken: 0.180480 seconds
+Path Length: 24
+Path: LLDRDRUULDRDLLURDRUULDDR
+--------------------------------------
+File: 131406.txt
+Problem: EightPuzzle((0, 8, 1, 7, 4, 6, 3, 2, 5),
+Algorithm: h2
+Nodes Generated: 16,517
+Time Taken: 0.208233 seconds
+Path Length: 24
+Path: DDRUURDLLURDDLURDRUULDDR
+--------------------------------------
+File: 131378.txt
+Problem: EightPuzzle((1, 4, 8, 7, 6, 5, 2, 3, 0),
+Algorithm: h2
+Nodes Generated: 11,661
+Time Taken: 0.133998 seconds
+Path Length: 24
+Path: LUURDDLLURDRULURDDLUURDD
+--------------------------------------
+File: 131345.txt
+Problem: EightPuzzle((0, 4, 8, 6, 7, 5, 3, 1, 2),
+Algorithm: h2
+Nodes Generated: 11,731
+Time Taken: 0.119101 seconds
+Path Length: 24
+Path: DRDLURULDRDRUULDDRUULDDR
+--------------------------------------
+File: 131425.txt
+Problem: EightPuzzle((7, 6, 8, 2, 1, 5, 0, 4, 3),
+Algorithm: h2
+Nodes Generated: 19,213
+Time Taken: 0.205712 seconds
+Path Length: 24
+Path: RRUULDDLUURDDLURDRUULDDR
+--------------------------------------
+File: 131394.txt
+Problem: EightPuzzle((1, 6, 5, 2, 3, 4, 8, 7, 0),
+Algorithm: h2
+Nodes Generated: 25,497
+Time Taken: 0.308204 seconds
+Path Length: 26
+Path: UULDDRULLDRRUULDDRULLDRURD
+--------------------------------------
+File: 131455.txt
+Problem: EightPuzzle((3, 6, 0, 8, 1, 5, 7, 4, 2),
+Algorithm: h2
+Nodes Generated: 21,279
+Time Taken: 0.233345 seconds
+Path Length: 24
+Path: LLDRDRUULLDRURDLDRUULDDR
+--------------------------------------
+File: 131324.txt
+Problem: EightPuzzle((6, 8, 4, 3, 5, 2, 7, 1, 0),
+Algorithm: h2
+Nodes Generated: 13,339
+Time Taken: 0.154229 seconds
+Path Length: 24
+Path: ULDRUULLDRRULLDRDRUULDDR
+--------------------------------------
+File: 131279.txt
+Problem: EightPuzzle((0, 3, 6, 8, 7, 5, 1, 2, 4),
+Algorithm: h2
+Nodes Generated: 17,919
+Time Taken: 0.215651 seconds
+Path Length: 24
+Path: RDLDRRULULDDRULDRRUULDDR
+--------------------------------------
+File: 131286.txt
+Problem: EightPuzzle((2, 1, 7, 4, 6, 8, 0, 3, 5),
+Algorithm: h2
+Nodes Generated: 20,280
+Time Taken: 0.227693 seconds
+Path Length: 24
+Path: UURDDRUULDRDLULDRRUULDDR
+--------------------------------------
+File: 131256.txt
+Problem: EightPuzzle((6, 7, 0, 1, 4, 8, 2, 5, 3),
+Algorithm: h2
+Nodes Generated: 16,378
+Time Taken: 0.176010 seconds
+Path Length: 24
+Path: DDLUULDDRURULDLDRRUULDDR
+--------------------------------------
+TOTAL
+Algorithm: h2
+Nodes Generated: 323,585
+Time Taken: 3.620268 seconds
+Avg Run Time: 0.18101340532302856 seconds
+Avg Nodes Explored: 16179.25
+--------------------------------------
+
+
+
+*** A* (h3) L24: ***
+----------------------------------------
+File: 131449.txt
+Problem: EightPuzzle((3, 6, 4, 8, 1, 5, 7, 2, 0),
+Algorithm: h3
+Nodes Generated: 250,344
+Time Taken: 2.966867 seconds
+Path Length: 26
+Path: ULURDDLULURRDDLULURRDLURDD
+--------------------------------------
+File: 131271.txt
+Problem: EightPuzzle((3, 8, 7, 1, 0, 5, 2, 6, 4),
+Algorithm: h3
+Nodes Generated: 170,686
+Time Taken: 2.137624 seconds
+Path Length: 24
+Path: URDLDRULULDDRULDRRUULDRD
+--------------------------------------
+File: 131311.txt
+Problem: EightPuzzle((2, 7, 6, 8, 0, 5, 3, 1, 4),
+Algorithm: h3
+Nodes Generated: 167,368
+Time Taken: 2.132431 seconds
+Path Length: 24
+Path: DLURULDRRULDDRULDLURURDD
+--------------------------------------
+File: 131304.txt
+Problem: EightPuzzle((7, 3, 0, 8, 6, 2, 1, 4, 5),
+Algorithm: h3
+Nodes Generated: 157,087
+Time Taken: 2.098223 seconds
+Path Length: 24
+Path: LLDDRULURDRDLLUURDDLURRD
+--------------------------------------
+File: 131264.txt
+Problem: EightPuzzle((6, 8, 0, 1, 4, 5, 3, 2, 7),
+Algorithm: h3
+Nodes Generated: 310,171
+Time Taken: 3.841330 seconds
+Path Length: 24
+Path: LLDRDLURDRUULDLDRRUULDDR
+--------------------------------------
+File: 131274.txt
+Problem: EightPuzzle((6, 8, 0, 3, 7, 5, 1, 2, 4),
+Algorithm: h3
+Nodes Generated: 309,555
+Time Taken: 3.773566 seconds
+Path Length: 24
+Path: LLDDRRUULLDDRULDRRUULDDR
+--------------------------------------
+File: 131248.txt
+Problem: EightPuzzle((1, 6, 0, 2, 5, 7, 3, 4, 8),
+Algorithm: h3
+Nodes Generated: 150,211
+Time Taken: 1.718223 seconds
+Path Length: 24
+Path: LDLURDRULLDRDLURDRULURDD
+--------------------------------------
+File: 131370.txt
+Problem: EightPuzzle((7, 6, 4, 3, 0, 8, 2, 1, 5),
+Algorithm: h3
+Nodes Generated: 336,736
+Time Taken: 4.173096 seconds
+Path Length: 24
+Path: DRUULDLURDRDLLURDRUULDDR
+--------------------------------------
+File: 131400.txt
+Problem: EightPuzzle((0, 6, 5, 1, 7, 4, 2, 3, 8),
+Algorithm: h3
+Nodes Generated: 153,056
+Time Taken: 1.810561 seconds
+Path Length: 24
+Path: DRRDLLURDRULURDLDRULURDD
+--------------------------------------
+File: 131374.txt
+Problem: EightPuzzle((6, 4, 0, 1, 7, 8, 2, 3, 5),
+Algorithm: h3
+Nodes Generated: 309,993
+Time Taken: 3.959010 seconds
+Path Length: 24
+Path: LLDRDRUULDRDLLURDRUULDDR
+--------------------------------------
+File: 131406.txt
+Problem: EightPuzzle((0, 8, 1, 7, 4, 6, 3, 2, 5),
+Algorithm: h3
+Nodes Generated: 264,784
+Time Taken: 3.457981 seconds
+Path Length: 26
+Path: RDDRULLDRULURRDLLDRULURRDD
+--------------------------------------
+File: 131378.txt
+Problem: EightPuzzle((1, 4, 8, 7, 6, 5, 2, 3, 0),
+Algorithm: h3
+Nodes Generated: 147,263
+Time Taken: 1.860364 seconds
+Path Length: 24
+Path: LUURDDLLURDRULURDDLUURDD
+--------------------------------------
+File: 131345.txt
+Problem: EightPuzzle((0, 4, 8, 6, 7, 5, 3, 1, 2),
+Algorithm: h3
+Nodes Generated: 252,845
+Time Taken: 3.253743 seconds
+Path Length: 26
+Path: DRDLUURDLURRDDLUURDDLUURDD
+--------------------------------------
+File: 131425.txt
+Problem: EightPuzzle((7, 6, 8, 2, 1, 5, 0, 4, 3),
+Algorithm: h3
+Nodes Generated: 309,116
+Time Taken: 4.343773 seconds
+Path Length: 24
+Path: RRUULDDLUURDDLURDRUULDDR
+--------------------------------------
+File: 131394.txt
+Problem: EightPuzzle((1, 6, 5, 2, 3, 4, 8, 7, 0),
+Algorithm: h3
+Nodes Generated: 251,975
+Time Taken: 3.635164 seconds
+Path Length: 26
+Path: ULURDLLURDDRUULLDRDLURURDD
+--------------------------------------
+File: 131455.txt
+Problem: EightPuzzle((3, 6, 0, 8, 1, 5, 7, 4, 2),
+Algorithm: h3
+Nodes Generated: 298,034
+Time Taken: 4.634638 seconds
+Path Length: 24
+Path: LLDRDRUULLDRURDLDRUULDDR
+--------------------------------------
+File: 131324.txt
+Problem: EightPuzzle((6, 8, 4, 3, 5, 2, 7, 1, 0),
+Algorithm: h3
+Nodes Generated: 302,906
+Time Taken: 3.978654 seconds
+Path Length: 24
+Path: ULDRUULLDRRULLDRDRUULDDR
+--------------------------------------
+File: 131279.txt
+Problem: EightPuzzle((0, 3, 6, 8, 7, 5, 1, 2, 4),
+Algorithm: h3
+Nodes Generated: 306,554
+Time Taken: 6.086850 seconds
+Path Length: 24
+Path: RDLDRRULULDDRULDRRUULDDR
+--------------------------------------
+File: 131286.txt
+Problem: EightPuzzle((2, 1, 7, 4, 6, 8, 0, 3, 5),
+Algorithm: h3
+Nodes Generated: 304,124
+Time Taken: 6.130345 seconds
+Path Length: 24
+Path: UURDDRUULDRDLULDRRUULDDR
+--------------------------------------
+File: 131256.txt
+Problem: EightPuzzle((6, 7, 0, 1, 4, 8, 2, 5, 3),
+Algorithm: h3
+Nodes Generated: 310,521
+Time Taken: 4.790184 seconds
+Path Length: 24
+Path: DDLUULDDRURULDLDRRUULDDR
+--------------------------------------
+TOTAL
+Algorithm: h3
+Nodes Generated: 5,063,329
+Time Taken: 70.790429 seconds
+Avg Run Time: 3.5395214557647705 seconds
+Avg Nodes Explored: 253166.45
+--------------------------------------
