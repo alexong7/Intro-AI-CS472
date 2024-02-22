@@ -3,6 +3,8 @@ from Problem import *
 import numpy as np
 
 
+
+# Code from the AIMA book
 class EightPuzzle(Problem):
     """ The problem of sliding tiles numbered from 1 to 8 on a 3x3 board,
     where one of the squares is a blank, trying to reach a goal configuration.

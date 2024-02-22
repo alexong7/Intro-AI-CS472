@@ -1,5 +1,6 @@
 import heapq
 
+# Code from the AIMA book
 class PriorityQueue:
     """A queue in which the item with minimum f(item) is always popped first."""
 

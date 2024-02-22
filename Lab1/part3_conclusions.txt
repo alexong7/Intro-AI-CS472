@@ -1,0 +1,17 @@
+When running all 60 puzzles in part 3 against each of the 5 algorithms, it was 
+expected that IDS would run the slowest, averaging roughly 60 seconds per puzzle 
+in the L24 solutions. 
+
+My IDS was taken and implemented using the book code and one of the biggest reasons
+for performing so slow is due to not checking for repeated states. However, IDS
+is meant to be more memory/space efficient, and introducing a hash map would essentially
+negate this space benefit in return for speed. Also tracking repeated states is not as simple
+as tossing it into a hash set. Since we are exploring at differen depths, if a node is reached 
+again, but the previous visit was from a node of a deeper depth, you would have to revist it 
+as you have now found the node at a shorter path, making it more optimal. 
+
+The rest of the algorithms performed fairly average. L8 noticed very little differences in 
+performance, while L15 was still fairly close. L24 is where the more optimal algorithms began
+to take massive gaps. H1 was surprisginly more performant in the L8 and L15 cases, even though
+it is a much more naive heuristic. My guess is on the small search spaces like those, the 
+benefit is negligable, but really showed a drastic difference on L24 test cases.

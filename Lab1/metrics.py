@@ -1,15 +1,14 @@
 from collections import Counter
-from fileinput import filename
 import time
 from Node import path_actions
 from EightPuzzle import valid_puzzle
 
 
-# Max Timeout in Seconds, 15 minutes
-MAX_TIMEOUT = 900
 
+# What file to write to, can change for part 2 or 3
 outputPath = "part3_output.txt"
 
+# Code from the AIMA book
 class CountCalls:
     """Delegate all attribute gets to the object, and count them in ._counts"""
     def __init__(self, obj):
@@ -21,7 +20,8 @@ class CountCalls:
         self._counts[attr] += 1
         return getattr(self._object, attr)
 
-        
+# Bulk of the application, solves the puzzles against the search algorithms
+# and then prints the metrics to the console and writes to a file
 def report(searchers, problems, verbose=True):
     """Show summary statistics for each searcher (and on each problem unless verbose is false)."""
     for searcher in searchers:

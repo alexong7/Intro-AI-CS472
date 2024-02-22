@@ -86,12 +86,6 @@ def parseBoard(filePath):
 
     return tuple(list(map(int, temp))
 )
-
-
- 
-
-
-
     
 if __name__ == '__main__':
     main()

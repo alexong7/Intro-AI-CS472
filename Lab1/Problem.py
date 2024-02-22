@@ -1,5 +1,3 @@
-
-
 import random
 import heapq
 import math
@@ -7,6 +5,8 @@ import sys
 from collections import defaultdict, deque, Counter
 from itertools import combinations
 
+
+# Code from the AIMA book
 class Problem(object):
     """The abstract class for a formal problem. A new domain subclasses this,
     overriding `actions` and `results`, and perhaps other methods.

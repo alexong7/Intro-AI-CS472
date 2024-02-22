@@ -9,6 +9,8 @@ from timeout import timeout
 FIFOQueue = deque
 LIFOQueue = list
 
+# Code from the AIMA book
+
 # BFS
 # ---------------------------------------------------------
 @timeout(900)

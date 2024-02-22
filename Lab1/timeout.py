@@ -3,6 +3,10 @@ import os
 import signal
 import functools
 
+
+# This code allows us to handle timeouts for functions
+# by using @timeout() annotations, where we can specify
+# the timeout in seconds
 class TimeoutError(Exception):
     pass
 
