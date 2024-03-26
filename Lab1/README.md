@@ -12,7 +12,7 @@ The entry point for this code is in the `main.py` file. The program expects two 
 - `h2`
 - `h3`
 
-An example of running the application:
+# Examples of running the application:
 
 ### Run all puzzles in a directory against bfs
 `python3 main.py --fPath Part2 --alg bfs`
