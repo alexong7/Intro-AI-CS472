@@ -1,3 +1,5 @@
+from GameSearch import *
+
 # Abstract class for defining our Game
 #
 # Code from the AIMA-Python Github
@@ -26,16 +28,29 @@ class Game:
         raise NotImplementedError
         
 
-def play_game(game: Game, strategies: dict, verbose=False):
+def play_game(game: Game, strategies: dict, verbose=False, eval_function=None, depth=3):
     """Play a turn-taking game. `strategies` is a {player_name: function} dict,
     where function(state, game) is used to get the player's move."""
     state = game.initial
     while not game.is_terminal(state):
         player = state.to_move
-        print(f'player {player}')
-        move = strategies[player](game, state)
-        state = game.result(state, move)
+        print(f'Turn {state.turn}')
+
+        strategy = strategies[player]
+
+        # If we are using a cutoff, provide an evaluation function
+        if strategies[player] == h_alphabeta_search:
+            move = strategy(game, state, h=eval_function, cutoff=cutoff_depth(depth))
+        else:
+            move = strategy(game, state)
+
+
+        if isinstance(move[1], tuple):
+            state = game.result(state, move[1])
+        else:
+            state = game.result(state, move)
         if verbose: 
             print('Player', player, 'move:', move)
             print(state)
+    print(f'Player {player} wins!')
     return state

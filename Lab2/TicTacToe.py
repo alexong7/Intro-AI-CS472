@@ -1,7 +1,6 @@
 from Game import *
 from collections import defaultdict
 
-import random
 
 # We define a simple Tic Tac Toe game in 
 # order to build off into our Gomoku game.
@@ -28,9 +27,9 @@ class TicTacToe(Game):
     def result(self, board, square):
         """Place a marker for current player on square."""
         player = board.to_move
-        board = board.new({square: player}, to_move=('O' if player == 'X' else 'X'))
+        board = board.new({square: player}, to_move=('O' if player == 'X' else 'X'), turn = board.turn + 1)
         win = k_in_row(board, player, square, self.k)
-        board.utility = (0 if not win else +1 if player == 'X' else -1)
+        board.utility = (0 if not win else +5000 if player == 'X' else -5000)
         return board
 
     def utility(self, board, player):
@@ -57,10 +56,12 @@ class Board(defaultdict):
     empty = '.'
     off = '#'
     
-    def __init__(self, width=8, height=8, to_move=None, **kwds):
-        self.__dict__.update(width=width, height=height, to_move=to_move, **kwds)
+    def __init__(self, width=8, height=8, to_move=None, turn=1, **kwds):
+        self.__dict__.update(width=width, height=height, to_move=to_move, turn=turn, **kwds)
         self.width, self.height = width, height
         self.to_move = to_move
+        self.turn = turn
+
         
     def new(self, changes: dict, **kwds) -> 'Board':
         "Given a dict of {(x, y): contents} changes, return a new Board with the changes."
@@ -79,12 +80,18 @@ class Board(defaultdict):
     def __hash__(self): 
         return hash(tuple(sorted(self.items()))) + hash(self.to_move)
     
-    def __repr__(self):
-        def row(y): return ' '.join(self[x, y] for x in range(self.width))
-        return '\n'.join(map(row, range(self.height))) +  '\n'
-    
-def random_player(game, state): return random.choice(list(game.actions(state)))
 
-def player(search_algorithm):
-    """A game player who uses the specified search algorithm"""
-    return lambda game, state: search_algorithm(game, state)[1]
+    def __repr__(self):
+        def row(y):
+            # Include row number
+            row_label = str(y).rjust(2) + ' '
+            # Join cells in the row with spaces and adjust spacing for alignment
+            row_content = ' '.join(self[x, y].center(3) for x in range(self.width))
+            return row_label + row_content
+
+        # Create column labels with adjusted spacing
+        col_labels = '   ' + ' '.join(str(i).center(3) for i in range(self.width))
+
+        # Join rows with line breaks and add column labels at the top
+        return col_labels + '\n' + '\n'.join(map(row, range(self.height))) + '\n'
+        

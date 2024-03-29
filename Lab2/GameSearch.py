@@ -162,13 +162,12 @@ def cutoff_depth(d):
 
 # Alphabeta with a cutoff_depth. Good for large boards with large
 # game trees like Gomoku
-def h_alphabeta_search(game, state, cutoff=cutoff_depth(3), h=lambda s, p: 0):
+def h_alphabeta_search(game, state, cutoff=cutoff_depth(1), h=lambda s, p: 0):
     """Search game to determine best action; use alpha-beta pruning.
     As in [Figure 5.7], this version searches all the way to the leaves."""
 
     player = state.to_move
 
-    @cache1
     def max_value(state, alpha, beta, depth):
         if game.is_terminal(state):
             return game.utility(state, player), None
@@ -184,7 +183,6 @@ def h_alphabeta_search(game, state, cutoff=cutoff_depth(3), h=lambda s, p: 0):
                 return v, move
         return v, move
 
-    @cache1
     def min_value(state, alpha, beta, depth):
         if game.is_terminal(state):
             return game.utility(state, player), None
@@ -201,3 +199,85 @@ def h_alphabeta_search(game, state, cutoff=cutoff_depth(3), h=lambda s, p: 0):
         return v, move
 
     return max_value(state, -infinity, +infinity, 0)
+
+# Evaluation Functions:
+# ---------------------
+
+# Evaluation function that gives a score based on the amount of 
+# threats of the current state.
+# A threat is where 4 in a row exists.
+#
+# The function will prioritize a chance to win if the player has 
+# 4 in a row. Otherwise it will block the opponents 4 in a row
+# if found.
+def evaluate_threats(board, player):
+    """
+    Evaluate the current board state for the given player in terms of creating winning formations
+    and blocking opponent threats.
+    """
+    # Define the opponent player
+    opponent = 'O' if player == 'X' else 'X'
+
+    # Initialize the threat score
+    threat_score = 0
+
+    # Check for winning opportunities for the player and potential threats from the opponent
+    for line in rows(board) + columns(board) + diagonals(board):
+        for i in range(len(line) - 4):
+            # Check for winning formations for the player
+            if line[i:i+5].count(player) == 4 and '.' in line[i:i+5]:
+                threat_score += 100  # Prioritize completing player's winning sequences
+
+            # Check for potential threats from the opponent
+            elif line[i:i+5].count(opponent) == 4 and '.' in line[i:i+5]:
+                threat_score -= 50  # Penalize opponent's potential winning sequences
+
+    return threat_score
+
+
+# Provides a score of the current board position
+# based on common patterns in Gomoku, each weighted
+# with a score
+def evaluate_pattern(board, player):
+    """
+    Evaluate the current board state for the given player based on pattern recognition.
+    """
+    # Define the opponent player
+    opponent = 'O' if player == 'X' else 'X'
+
+    # Initialize the pattern score
+    pattern_score = 0
+
+    winning_patterns = [
+        ('.' + player * 4, 100),                            # Make four in a row
+        (player * 4 + '.', 100),                            # Make four in a row
+        ('.' + player * 4 + '.', 200),                      # Open four in a row
+        ('.' + player * 3 + '.', 5),                        # Open three
+        ('.' + player * 2 + '.', 2),                        # Open two
+        ('.' + opponent * 4 + '.', -800),                   # Threatened five by opponent
+        ('.' + opponent * 3 + '.', -1000),                  # Threatened by opponent making a 4 with open ends
+        ('.' + opponent + '.' + opponent * 2 + '.', -1000), # Threatened by opponent making a 4 with open ends
+        ('.' + opponent + '.' + opponent * 2 + '.', -1000), # Threatened by opponent making a 4 with open ends
+    ]
+
+    # Check for each pattern ins rows, columns, and diagonals
+    for line in rows(board) + columns(board) + diagonals(board):
+        for pattern, score in winning_patterns:
+            if pattern in ''.join(line):
+                pattern_score += score
+                
+    return pattern_score
+
+
+def rows(board):
+    "Return a list of rows, each row is a list of cells."
+    return [[board[x, y] for x in range(board.width)] for y in range(board.height)]
+
+def columns(board):
+    "Return a list of columns, each column is a list of cells."
+    return [[board[x, y] for y in range(board.height)] for x in range(board.width)]
+
+def diagonals(board):
+    "Return a list of diagonals, each diagonal is a list of cells."
+    return [[board[x+i, y+i] for i in range(board.width) if 0 <= x+i < board.width and 0 <= y+i < board.height] for x, y in [(0, y) for y in range(board.height)] + [(x, 0) for x in range(1, board.width)]]
+    
